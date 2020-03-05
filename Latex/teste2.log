@@ -1,0 +1,889 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  5 MAR 2020 10:21
+entering extended mode
+**"c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex"
+("c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-03> ("C:\Users\leafe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count167
+\l__pdf_internal_box=\box45
+) ("c:/Users\leafe\OneDrive\Área de Trabalho\18.00189-0_BrunaGuedes\Latex\teste2.aux")
+\openout1 = `teste2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:1: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:3: Undefined control sequence.
+l.3 \maketitle
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:7: Undefined control sequence.
+l.7 \section
+            *{Questão 1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:12: Undefined control sequence.
+l.12 \section
+             *{Questão 2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:14: Missing number, treated as zero.
+<to be read again> 
+                   \c@* 
+l.14 ...e, labelindent=0pt, label=\textbf{\alph*)}
+                                                  ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:16: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \item   A
+                  ntecedente – Quantidade suficiente de água\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:16: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \item   A
+                  ntecedente – Quantidade suficiente de água\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:16: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \item   A
+                  ntecedente – Quantidade suficiente de água\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:19: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item   A
+                  ntecedente – Crescimento da oferta de computadores\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:19: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item   A
+                  ntecedente – Crescimento da oferta de computadores\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:19: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item   A
+                  ntecedente – Crescimento da oferta de computadores\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:22: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22     \item   A
+                  ntecedente – Programa alterado\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:22: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22     \item   A
+                  ntecedente – Programa alterado\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:22: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22     \item   A
+                  ntecedente – Programa alterado\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:25: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25     \item   A
+                  ntecedente – Economia de combustível ou todas as janelas\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:25: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25     \item   A
+                  ntecedente – Economia de combustível ou todas as janelas\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:25: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25     \item   A
+                  ntecedente – Economia de combustível ou todas as janelas\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:27: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:30: Undefined control sequence.
+l.30 \section
+             *{Questão 3}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:45: Missing number, treated as zero.
+<to be read again> 
+                   \c@* 
+l.45 ...e, labelindent=0pt, label=\textbf{\alph*)}
+                                                  ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:47: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47     \item \fB
+                   ou \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:47: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47     \item \fB
+                   ou \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:47: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47     \item \fB
+                   ou \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:49: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49     \item \fC
+                   e \fna equivalem ao \fb
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:49: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49     \item \fC
+                   e \fna equivalem ao \fb
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:49: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49     \item \fC
+                   e \fna equivalem ao \fb
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:51: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51     \item $
+                \neg (B \wedge \neg C) \leftrightarrow
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:51: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51     \item $
+                \neg (B \wedge \neg C) \leftrightarrow
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:51: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51     \item $
+                \neg (B \wedge \neg C) \leftrightarrow
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 51.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 51.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:55: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55     \item \fA
+                   ou \fb, e \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:55: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55     \item \fA
+                   ou \fb, e \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:55: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55     \item \fA
+                   ou \fb, e \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:57: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57     \item \fnB
+                   , ou \fa implica que \fc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:57: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57     \item \fnB
+                   , ou \fa implica que \fc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:57: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57     \item \fnB
+                   , ou \fa implica que \fc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:59: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59     \item \fC
+                  , e \fna é equivalente a \fb
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:59: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59     \item \fC
+                  , e \fna é equivalente a \fb
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:59: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59     \item \fC
+                  , e \fna é equivalente a \fb
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:61: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61     \item \fA
+                  , ou \fb e \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:61: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61     \item \fA
+                  , ou \fb e \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:61: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61     \item \fA
+                  , ou \fb e \fnc
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:62: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:65: Undefined control sequence.
+l.65 \section
+             *{Questão 4}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:118: Undefined control sequence.
+<recently read> \therefore 
+                           
+l.118 \textbf{$\therefore$ é uma tautologia.}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:170: Undefined control sequence.
+<recently read> \therefore 
+                           
+l.170 \textbf{$\therefore$ é uma tautologia.}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:222: Undefined control sequence.
+<recently read> \therefore 
+                           
+l.222 \textbf{$\therefore$ é uma tautologia.}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:248: Undefined control sequence.
+<recently read> \therefore 
+                           
+l.248 \textbf{$\therefore$ é uma tautologia}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:251: Undefined control sequence.
+l.251 \section
+              *{Questão 5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:313: Undefined control sequence.
+l.313 \section
+              *{Questão 6}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:317: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 \begin{table}
+                   [h!]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:329: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:333: Undefined control sequence.
+l.333 \section
+              *{Questão 7}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:335: LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.335 \begin{align*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:336: Misplaced alignment tab character &.
+l.336     1. \hspace{10pt} &
+                             p \rightarrow q & (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:336: Missing $ inserted.
+<inserted text> 
+                $
+l.336     1. \hspace{10pt} & p \rightarrow
+                                           q & (hip.) \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:336: Misplaced alignment tab character &.
+l.336     1. \hspace{10pt} & p \rightarrow q &
+                                               (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:337: Misplaced alignment tab character &.
+l.337     2. \hspace{10pt} &
+                             \neg r \vee (\neg t \vee u) & (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:337: Misplaced alignment tab character &.
+l.337 ...ace{10pt} & \neg r \vee (\neg t \vee u) &
+                                                   (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:338: Misplaced alignment tab character &.
+l.338     3. \hspace{10pt} &
+                             p \wedge t & (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:338: Misplaced alignment tab character &.
+l.338     3. \hspace{10pt} & p \wedge t &
+                                          (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:339: Misplaced alignment tab character &.
+l.339     4. \hspace{10pt} &
+                             q \rightarrow (r \wedge s) & (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:339: Misplaced alignment tab character &.
+l.339 ...pace{10pt} & q \rightarrow (r \wedge s) &
+                                                   (hip.) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:340: Misplaced alignment tab character &.
+l.340     5. \hspace{10pt} &
+                             q & (1, hip) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:340: Misplaced alignment tab character &.
+l.340     5. \hspace{10pt} & q &
+                                 (1, hip) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:341: Misplaced alignment tab character &.
+l.341     6. \hspace{10pt} &
+                             p, t & (3, sim) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:341: Misplaced alignment tab character &.
+l.341     6. \hspace{10pt} & p, t &
+                                    (3, sim) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:342: Misplaced alignment tab character &.
+l.342     7. \hspace{10pt} &
+                             r \wedge s & (4, mp) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:342: Misplaced alignment tab character &.
+l.342     7. \hspace{10pt} & r \wedge s &
+                                          (4, mp) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:343: Misplaced alignment tab character &.
+l.343     8. \hspace{10pt} &
+                             r, s & (7, sim) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:343: Misplaced alignment tab character &.
+l.343     8. \hspace{10pt} & r, s &
+                                    (7, sim) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:344: Misplaced alignment tab character &.
+l.344     9. \hspace{10pt} &
+                             u \qed & (6, 8, add)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:344: Undefined control sequence.
+l.344     9. \hspace{10pt} & u \qed
+                                    & (6, 8, add)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:344: Misplaced alignment tab character &.
+l.344     9. \hspace{10pt} & u \qed &
+                                      (6, 8, add)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:345: LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.345 \end{align*}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:345: Missing $ inserted.
+<inserted text> 
+                $
+l.345 \end{align*}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+c:/Users/leafe/OneDrive/Área de Trabalho/18.00189-0_BrunaGuedes/Latex/teste2.tex:371: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.371 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{C:/Users/leafe/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("c:/Users\leafe\OneDrive\Área de Trabalho\18.00189-0_BrunaGuedes\Latex\teste2.aux") ) 
+Here is how much of TeX's memory you used:
+ 204 strings out of 481292
+ 5111 string characters out of 2907785
+ 252332 words of memory out of 3000000
+ 15800 multiletter control sequences out of 15000+200000
+ 533611 words of font info for 28 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,9n,19p,297b,155s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/leafe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/leafe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/leafe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/leafe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/leafe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "c:/Users\leafe\OneDrive\Área de Trabalho\18.00189-0_BrunaGuedes\Latex\teste2.pdf" (1 page, 74056 bytes).
+PDF statistics:
+ 26 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
