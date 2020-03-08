@@ -8,20 +8,20 @@ import javax.sound.sampled.SourceDataLine;
 
     class Ex1 {
         public static void main (String[] args){
-            Scanner ler = new Scanner (System.in);
-            String nome, email;
-            int ra, telefone, idade;
+            Scanner scanner = new Scanner (System.in);
+            String nome, email,ra, telefone, idade;
 
             System.out.println("Digite seu RA: ");
-            ra = ler.nextInt();
+            ra = scanner.nextLine();
             System.out.println("Digite seu nome completo: ");
-            nome = ler.next();
+            nome = scanner.nextLine();
             System.out.println("Digite seu telefone: ");
-            telefone = ler.nextInt();
+            telefone = scanner.nextLine();
             System.out.println("Digite seu email: ");
-            email = ler.next();
+            email = scanner.nextLine();
             System.out.println("Digite seu sua idade: ");
-            idade = ler.nextInt();
-            System.out.printf("RA: %i\nNome: %s\nTelefone: %i\nEmail: %s\nIdade: %i", ra, nome, telefone, email, idade);
+            idade = scanner.nextLine();
+            
+            System.out.printf("RA: %s\nNome: %s\nTelefone: %s\nEmail: %s\nIdade: %s", ra, nome, telefone, email, idade);
         }
     }
