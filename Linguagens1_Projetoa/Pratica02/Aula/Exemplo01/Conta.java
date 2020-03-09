@@ -2,8 +2,8 @@
 
 public class Conta{
     // Atributos da classe
-    int numero;
-    String titular;
-    double saldo;
-    String CPF;
+    public int numero;
+    public String titular;
+    public double saldo;
+    public String CPF;
 }
