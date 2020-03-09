@@ -8,7 +8,7 @@ import java.util.Scanner;
     public class Ex6 {
         public static void main (String[] args){
             
-            Scanner scanner = new scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             int vali, valo, i;
             int soma = 0;
             int mult = 1;
