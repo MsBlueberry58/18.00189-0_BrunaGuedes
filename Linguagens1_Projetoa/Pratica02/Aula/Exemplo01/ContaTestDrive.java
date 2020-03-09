@@ -15,6 +15,15 @@
             c1.saldo = 2000;
             c1.visualizarSaldo();
             c2.visualizarSaldo();
+            c1.sacar(300);
+            c1.visualizarSaldo();
+            c1.sacar(3000);
+            c1.visualizarSaldo();
+            c1.transferirDinheiro(1000, c2);
+            c1.visualizarSaldo();
+            c2.visualizarSaldo();
+        
+            
             
         }
     }
