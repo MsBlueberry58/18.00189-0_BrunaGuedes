@@ -6,4 +6,13 @@ public class Conta{
     public String titular;
     public double saldo;
     public String CPF;
+
+    // Métodos da classe
+    void sacar (){}; 
+    void depositar (){}; 
+    void visualizarSaldo (){};
+    void transferirDinheiro (){}; 
+ 
+
+
 }

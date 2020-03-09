@@ -11,16 +11,17 @@ import java.util.Scanner;
             int MAX = 50;
             // O que significa e o que é inicializar valor?
             int [] fib = new int[MAX];
+            int [] aux = new int[MAX];
             fib [0] = 1;
-            
-            
+            aux [0] = 0;
+                  
             System.out.println("Digite o número do valor desejado: ");
             val = scanner.nextInt();
             
           for (i = 1; i<=(val+1); i++){
-              fib[i] = fib[i] + fib[i-1];
+              aux[i] = fib[i] + fib[i-1];
           }
-
-            System.out.printf("O valor da casa %i na sequência de Fibonnacci é %i", val, fib[val+1]);
+            
+            System.out.println("O valor da casa" + val + "na sequência de Fibonnacci é " + aux[val+1]);
         }
     }
