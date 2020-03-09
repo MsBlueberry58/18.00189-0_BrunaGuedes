@@ -12,5 +12,9 @@
             Conta c2 = new Conta();
             c2.titular = "Goku";
             System.out.println("Titula C2: " + c2.titular);
+            c1.saldo = 2000;
+            c1.visualizarSaldo();
+            c2.visualizarSaldo();
+            
         }
     }

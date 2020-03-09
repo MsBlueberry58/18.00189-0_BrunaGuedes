@@ -8,10 +8,13 @@ public class Conta{
     public String CPF;
 
     // Métodos da classe
-    void sacar (){}; 
-    void depositar (){}; 
-    void visualizarSaldo (){};
-    void transferirDinheiro (){}; 
+    void sacar (){} 
+    void depositar (){} 
+    void visualizarSaldo (){
+        System.out.println("Saldo: " + this.saldo);
+
+    }
+    void transferirDinheiro (){}
  
 
 
