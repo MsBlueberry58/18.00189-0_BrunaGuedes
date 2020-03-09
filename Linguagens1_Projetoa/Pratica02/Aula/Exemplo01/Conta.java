@@ -3,10 +3,9 @@ import jdk.nashorn.internal.codegen.types.BooleanType;
 public class Conta{
     // Atributos da classe
     public int numero;
-    public String titular;
+    public Cliente cliente;
     public double saldo;
-    public String CPF;
-
+    
     // Métodos da classe
     boolean sacar (double valor){
         if (valor>this.saldo)
