@@ -4,9 +4,9 @@
 
 import java.util.Scanner;
 
-    class Ex7 {
+    public class Ex7 {
         public static void main (String[] args){
-            Scanner scanner = new scanner (System.in);
+            Scanner scanner = new Scanner (System.in);
             int i, valor;
             int soma = 0;
             
@@ -14,7 +14,7 @@ import java.util.Scanner;
             valor = scanner.nextInt();
 
             do{
-                soma = soma + (num % 10);
+                soma = soma + (valor % 10);
                 valor = valor/10;
 
             } while (valor>0);
