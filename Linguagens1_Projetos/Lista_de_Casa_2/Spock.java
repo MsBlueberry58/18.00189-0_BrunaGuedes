@@ -9,7 +9,7 @@ public class Spock {
 
         //Criação da função 
         
-        void Spock(){
+        void SpockGame() {
 
         // Criação dos jogadores
 

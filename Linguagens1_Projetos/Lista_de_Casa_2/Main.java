@@ -23,7 +23,7 @@ public class Main{
             }
             else{
                 Spock jogoSpock = new Spock();
-                jogoSpock.Spock();
+                jogoSpock.SpockGame();
             }
 
         }while (!((modo.equals("tradicional")) || (modo.equals("spock"))));
