@@ -47,39 +47,39 @@ public class PedraPapelTesoura {
             System.out.println("O vencedor é " + this.player1.nome);
         }
 
-        if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("papel"))) {
+        else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("papel"))) {
             System.out.println("O vencedor é " + this.player2.nome);
         }
 
-        if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("pedra"))) {
+        else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("pedra"))) {
             System.out.println("Deu empate");
         }
 
         // Combinações papel
 
-        if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("tesoura"))) {
+        else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("tesoura"))) {
             System.out.println("O vencedor é " + this.player2.nome);
         }
 
-        if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("papel"))) {
+        else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("papel"))) {
             System.out.println("Deu empate");
         }
 
-        if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("pedra"))) {
+        else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("pedra"))) {
             System.out.println("O vencedor é " + this.player1.nome);
         }
 
         // Combinações tesoura
 
-        if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("tesoura"))) {
+        else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("tesoura"))) {
             System.out.println("Deu empate");
         }
 
-        if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("papel"))) {
+        else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("papel"))) {
             System.out.println("O vencedor é " + this.player1.nome);
         }
 
-        if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("pedra"))) {
+        else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("pedra"))) {
             System.out.println("O vencedor é " + this.player2.nome);
         }
 
