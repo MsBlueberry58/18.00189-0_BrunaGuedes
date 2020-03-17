@@ -17,10 +17,13 @@ public class Main{
             modo = modo.toLowerCase();
 
             if(modo.equals("tradicional")){
-                void Tradicional();
+                PedraPapelTesoura jogoTrad = new PedraPapelTesoura();
+                jogoTrad.Tradicional();
+                
             }
             else{
-                void Spock();
+                Spock jogoSpock = new Spock();
+                jogoSpock.Spock();
             }
 
         }while (!((modo.equals("tradicional")) || (modo.equals("spock"))));
