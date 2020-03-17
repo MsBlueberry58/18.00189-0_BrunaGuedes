@@ -3,10 +3,21 @@ import java.util.Scanner;
 public class PedraPapelTesoura {
     public static void main(String[] args) {
 
+        // Declaração de variáveis
+
         Scanner scanner = new Scanner (System.in);
         Jogador player1;
         Jogador player2;
 
+        //Cricação da função
+
+        void Tradicional(){
+
+        // Criação dos jogadores
+
+        player1 = new Jogador();
+        player2 = new Jogador();
+        
         // Coleta de dados
 
         System.out.println("Insira o nome do primeiro jogador: ");
@@ -27,9 +38,6 @@ public class PedraPapelTesoura {
 
         LimparTela();
 
-        //Cricação da função
-
-        void Tradicional(){
 
         // Pedra papel tesoura normal
 

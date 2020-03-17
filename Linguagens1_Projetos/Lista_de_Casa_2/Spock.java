@@ -2,35 +2,40 @@ import java.util.Scanner;
 
 public class Spock {
     public static void main(String[] args) {
-        // variáveis
+        // Declaração de variáveis
         Scanner scanner = new Scanner (System.in);
         Jogador player1;
         Jogador player2;
-
-        // Coleta de dados
-
-        System.out.println("Insira o nome do primeiro jogador: ");
-        this.player1.nome = scanner.nextLine();
-
-        System.out.println("Digite sua jogada: ");
-        this.player1.jogada = scanner.nextLine();
-        this.player1.jogada = player1.jogada.toLowerCase();
-
-        LimparTela();
-
-        System.out.println("Insira o nome do segundo jogador: ");
-        this.player2.nome = scanner.nextLine();
-
-        System.out.println("Digite sua jogada: ");
-        this.player2.jogada = scanner.nextLine();
-        this.player2.jogada = player2.jogada.toLowerCase();
-
-        LimparTela();
 
         //Criação da função 
         
         void Spock(){
 
+        // Criação dos jogadores
+
+        player1 = new Jogador();
+        player2 = new Jogador();
+
+         // Coleta de dados
+
+         System.out.println("Insira o nome do primeiro jogador: ");
+         this.player1.nome = scanner.nextLine();
+ 
+         System.out.println("Digite sua jogada: ");
+         this.player1.jogada = scanner.nextLine();
+         this.player1.jogada = player1.jogada.toLowerCase();
+ 
+         LimparTela();
+ 
+         System.out.println("Insira o nome do segundo jogador: ");
+         this.player2.nome = scanner.nextLine();
+ 
+         System.out.println("Digite sua jogada: ");
+         this.player2.jogada = scanner.nextLine();
+         this.player2.jogada = player2.jogada.toLowerCase();
+ 
+         LimparTela();
+ 
         // Pedra papel tesoura normal
 
         // Combinações pedra
