@@ -8,6 +8,7 @@ public class PedraPapelTesoura {
         Scanner scanner = new Scanner (System.in);
         Jogador player1;
         Jogador player2;
+        LimparTela limpar = new LimparTela();
 
         //Cricação da função
 
@@ -29,8 +30,8 @@ public class PedraPapelTesoura {
 
         // Limpar a tela
 
-        for (int i = 0; i < 11; ++i)  
-        System.out.println(); 
+        limpar.Limpeza();
+ 
 
         System.out.println("Insira o nome do segundo jogador: ");
         this.player2.nome = scanner.nextLine();
@@ -39,8 +40,8 @@ public class PedraPapelTesoura {
         this.player2.jogada = scanner.nextLine();
         this.player2.jogada = player2.jogada.toLowerCase();
 
-        for (int i = 0; i < 11; ++i)  
-        System.out.println(); 
+        limpar.Limpeza();
+
 
 
         // Pedra papel tesoura normal
@@ -48,11 +49,11 @@ public class PedraPapelTesoura {
         // Combinações pedra
 
         if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("tesoura"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("papel"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("pedra"))) {
@@ -62,7 +63,7 @@ public class PedraPapelTesoura {
         // Combinações papel
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("tesoura"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("papel"))) {
@@ -70,7 +71,7 @@ public class PedraPapelTesoura {
         }
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("pedra"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         // Combinações tesoura
@@ -80,11 +81,11 @@ public class PedraPapelTesoura {
         }
 
         else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("papel"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("pedra"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
     }

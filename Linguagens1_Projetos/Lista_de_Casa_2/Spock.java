@@ -6,6 +6,7 @@ public class Spock {
         Scanner scanner = new Scanner (System.in);
         Jogador player1;
         Jogador player2;
+        LimparTela limpar = new LimparTela();
 
         //Criação da função 
         
@@ -25,29 +26,28 @@ public class Spock {
          this.player1.jogada = scanner.nextLine();
          this.player1.jogada = player1.jogada.toLowerCase();
  
-         for (int i = 0; i < 11; ++i)  
-         System.out.println(); 
- 
+         limpar.Limpeza();
+
          System.out.println("Insira o nome do segundo jogador: ");
          this.player2.nome = scanner.nextLine();
  
          System.out.println("Digite sua jogada: ");
          this.player2.jogada = scanner.nextLine();
          this.player2.jogada = player2.jogada.toLowerCase();
- 
-         for (int i = 0; i < 11; ++i)  
-         System.out.println(); 
+
+        limpar.Limpeza();
+
  
         // Pedra papel tesoura normal
 
         // Combinações pedra
 
         if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("tesoura"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("papel"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("pedra"))) {
@@ -57,7 +57,7 @@ public class Spock {
         // Combinações papel
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("tesoura"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("papel"))) {
@@ -65,7 +65,7 @@ public class Spock {
         }
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("pedra"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         // Combinações tesoura
@@ -75,11 +75,11 @@ public class Spock {
         }
 
         else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("papel"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("pedra"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         // Parte do Lizard Spock
@@ -87,19 +87,19 @@ public class Spock {
         // Combinações Spock
 
         else if ((this.player1.jogada.equals("spock")) && (this.player2.jogada.equals("pedra"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("spock")) && (this.player2.jogada.equals("papel"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("spock")) && (this.player2.jogada.equals("tesoura"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("spock")) && (this.player2.jogada.equals("lagarto"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("spock")) && (this.player2.jogada.equals("spock"))) {
@@ -109,15 +109,15 @@ public class Spock {
         // Combinações lagarto
 
         else if ((this.player1.jogada.equals("lagarto")) && (this.player2.jogada.equals("pedra"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("lagarto")) && (this.player2.jogada.equals("papel"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("lagarto")) && (this.player2.jogada.equals("tesoura"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("lagarto")) && (this.player2.jogada.equals("lagarto"))) {
@@ -125,37 +125,37 @@ public class Spock {
         }
 
         else if ((this.player1.jogada.equals("lagarto")) && (this.player2.jogada.equals("spock"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         // Combinações pedra
 
         else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("lagarto"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("pedra")) && (this.player2.jogada.equals("spock"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         // Combinações papel
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("lagarto"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
         else if ((this.player1.jogada.equals("papel")) && (this.player2.jogada.equals("spock"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         // Combinações tesoura
 
         else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("lagarto"))) {
-            System.out.println("O vencedor é " + this.player1.nome);
+            System.out.println("O vencedor eh " + this.player1.nome);
         }
 
         else if ((this.player1.jogada.equals("tesoura")) && (this.player2.jogada.equals("spock"))) {
-            System.out.println("O vencedor é " + this.player2.nome);
+            System.out.println("O vencedor eh " + this.player2.nome);
         }
 
      }
