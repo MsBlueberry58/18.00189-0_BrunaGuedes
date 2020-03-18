@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Spock {
-    public static void main(String[] args) {
+    
         // Declaração de variáveis
         Scanner scanner = new Scanner (System.in);
         Jogador player1;
@@ -25,7 +25,8 @@ public class Spock {
          this.player1.jogada = scanner.nextLine();
          this.player1.jogada = player1.jogada.toLowerCase();
  
-         LimparTela();
+         for (int i = 0; i < 11; ++i)  
+         System.out.println(); 
  
          System.out.println("Insira o nome do segundo jogador: ");
          this.player2.nome = scanner.nextLine();
@@ -34,7 +35,8 @@ public class Spock {
          this.player2.jogada = scanner.nextLine();
          this.player2.jogada = player2.jogada.toLowerCase();
  
-         LimparTela();
+         for (int i = 0; i < 11; ++i)  
+         System.out.println(); 
  
         // Pedra papel tesoura normal
 
@@ -160,4 +162,3 @@ public class Spock {
 
     }
 
-}
