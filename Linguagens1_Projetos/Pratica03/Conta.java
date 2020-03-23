@@ -1,4 +1,3 @@
-package com.company;
 
 public class Conta{
     private double saldo;
