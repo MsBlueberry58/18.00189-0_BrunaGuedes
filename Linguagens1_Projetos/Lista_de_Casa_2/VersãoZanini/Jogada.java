@@ -1,11 +1,14 @@
-
 public class Jogada {
     private String escolha, ganhoDe, percoDe;
+    public static final String PEDRA = "pedra";
+    public static final String TESOURA = "tesoura";
+    public static final String PAPEL = "papel";
 
+    // Construtor do jogada
     public Jogada(String opcao) {
-        if (opcao.equals("pedra")) {
-            ganhoDe = "tesoura";
-            percoDe = "papel";
+        if (opcao.equals(this.PEDRA)) {
+            ganhoDe = this.TESOURA;
+            percoDe = this.PAPEL;
         } else if (opcao.equals("papel")) {
             ganhoDe = "pedra";
             percoDe = "tesoura";
@@ -14,7 +17,6 @@ public class Jogada {
             percoDe = "pedra";
         }
         escolha = opcao;
-
     }
 
     public String getEscolha() {
@@ -29,6 +31,5 @@ public class Jogada {
         } else {
             return "Empate!";
         }
-
     }
 }
