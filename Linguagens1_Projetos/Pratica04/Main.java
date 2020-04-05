@@ -1,15 +1,15 @@
 
 
-public class Main {
-    public static void main(String[] args) {
-
-        System.out.println("Total objetos: " + MinhaClasse.getContaObjetos());
-
-        MinhaClasse m1 = new MinhaClasse();
-        MinhaClasse m2 = new MinhaClasse();
-        MinhaClasse m3 = new MinhaClasse();
-
-        System.out.println("Total objetos: " + MinhaClasse.getContaObjetos());
+public class Main{
+    public static void main(String[] args){
+        Conta c1 = new Conta(500);
+        c1.depositar = 1000;
+        System.out.println("Saldo Atual: " + c1.saldo);
+        c1.sacar(200);
+        System.out.println("Saldo Atual: " + c1.saldo);
+        c1.depositar(1200);
+        System.out.println("Saldo Atual: " + c1.saldo);
 
     }
+
 }
