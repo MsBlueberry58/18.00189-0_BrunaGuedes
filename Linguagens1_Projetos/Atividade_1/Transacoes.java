@@ -19,7 +19,7 @@ public class Transacoes {
                 conta1.Sacar(Double.parseDouble(dados[2]));
                 conta2.Depositar(Double.parseDouble(dados[2]));
             } else {
-                System.out.println("Saldo insuficiente.");
+                System.out.println("Saldo de " + conta1.getUser().getNome() + " insuficiente.");
             }
         }
         else{

@@ -60,21 +60,14 @@ public class MainAtiv {
         // Conferindo
         System.out.println("Primeiro QRCode: " + QRCode1);
         Transacoes.Transferir(c2, c1, QRCode1);
-        Transacoes.Transferir(c2, c1, QRCode1);
         Transacoes.Transferir(c3, c1, QRCode1);
-
-         // Imprimindo estado intermediário
-         System.out.println("Estado intermediario 1: ");
-         System.out.println("Usuario: " + user1.getNome() + " --->" + " Saldo: " + c1.getSaldo());
-         System.out.println("Usuario: " + user2.getNome() + " --->" + " Saldo: " + c2.getSaldo());
-         System.out.println("Usuario: " + user3.getNome() + " --->" + " Saldo: " + c3.getSaldo());
+        Transacoes.Transferir(c2, c1, QRCode1);
 
         // Segunda transação
         QRCode2 = Transacoes.GerarQRCode(c2, 1000);
         // Conferindo
         System.out.println("Segundo QRCode: " + QRCode2);
         Transacoes.Transferir(c3, c2, QRCode2);
-
 
         
         // Imprimindo estado final
