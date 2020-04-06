@@ -10,11 +10,10 @@ public class Main {
 
         // Criar conta
         String nick, senha, email;
-        double cred = 0;
         System.out.println("Criacao de conta\n");
         System.out.println("Digite um nick: ");
         nick = scanner.nextLine();
-        Sy stem.out.println("Crie uma senha: ");
+        System.out.println("Crie uma senha: ");
         senha = scanner.nextLine();
         System.out.println("Digite seu email: "); 
         email = scanner.nextLine();
@@ -24,6 +23,7 @@ public class Main {
 
 
         // Login
+        System.out.println("Faça o login de sua conta:\n");
         do{
             System.out.println("Digite seu nick: ");
             loguser = scanner.nextLine();
@@ -41,8 +41,8 @@ public class Main {
         
         // Trocar de usuario
         if(choice.equals("1")){
-            exec.equals("1");
 
+            exec.equals("1");
         }
 
         // Informações sobre conta atual
@@ -67,7 +67,7 @@ public class Main {
                 System.out.println("Deseja continuar adicionando? (s/n): ");
                 op = scanner.nextLine();
 
-            } while(op.equals("s"))
+            } while(op.equals("s"));
            
             System.out.println("Lista de jogos atual: " + conta.getJogos());
             exec.equals("1");
@@ -78,13 +78,13 @@ public class Main {
         else if(choice.equals("4")){
             String op;
             double quant;
-            System.out.println("Saldo atual: " conta.getCreditos());
+            System.out.println("Saldo atual: " + conta.getCreditos());
             do{
                 System.out.println("Digite a quantidade de creditos que deseja adicionar: ");
                 quant = scanner.nextDouble();
                 conta.addCreditos(quant);
                 System.out.println("Saldo atual: " + conta.getCreditos());
-                System.out.println("Deseja continuar adicionando? (s/n): ");
+                System.out.println("Deseja continuar adicionando? (s/n): \n");
                 op = scanner.nextLine();
             } while (op.equals("s"));
 
@@ -93,10 +93,8 @@ public class Main {
             
         }
     
-        // Criar outra conta
+        //Criar outra conta
         else if(choice.equals("5")){
-            String nick, senha, email;
-            double cred = 0;
             System.out.println("Criacao de conta\n");
             System.out.println("Digite um nick: ");
             nick = scanner.nextLine();
@@ -104,9 +102,21 @@ public class Main {
             senha = scanner.nextLine();
             System.out.println("Digite seu email: "); 
             email = scanner.nextLine();
-            Usuario user = new Usuario(nick, senha, email);
-            Conta conta = new Conta (user);
+            user = new Usuario(nick, senha, email);
+            conta = new Conta (user); 
             System.out.println("Nova conta criada com sucesso: \nUser: " + user.getNickname() + "\nConta: " + conta.getInfo());
+    
+    
+            // Login
+            System.out.println("Faça o login de sua conta:\n");
+            do{
+                System.out.println("Digite seu nick: ");
+                loguser = scanner.nextLine();
+                System.out.println("Digite sua senha: ");
+                logpass = scanner.nextLine();
+    
+            } while(!((loguser.equals(nick)) && (logpass.equals(senha))));
+
             exec.equals("1");
             }
     
@@ -116,7 +126,7 @@ public class Main {
         }
 
         else{
-            System.out.println("Comando invalido! Tente novamente.")
+            System.out.println("Comando invalido! Tente novamente.\n");
             exec.equals("1");
         }
     
