@@ -10,7 +10,7 @@ public class MainAtiv {
         String nome1, nome2, nome3; 
         String senha1, senha2, senha3; 
         String email1, email2, email3;
-    
+        String[] QRCode1, QRCode2;
         // Criação do usuário 1
         System.out.println("Digite o nome do primeiro usuario: ");
         nome1 = scanner.nextLine();
@@ -43,19 +43,37 @@ public class MainAtiv {
         Contas c2 = new Contas(user2, 250);
         Contas c3 = new Contas(user3, 3000);
 
+        // Conferindo id
+        System.out.println("Id 1: " + c1.getId());
+        System.out.println("Id 2: " + c2.getId());
+        System.out.println("Id 3: " + c3.getId());
+
+
         // Transações
-    
+        // Primeira transação
+        QRCode1 = Transacoes.GerarQRCode(c1, 250);
+        // Conferindo
+        System.out.println("Primeiro QRCode: " + QRCode1);
+        Transacoes.Transferir(c2, c1, QRCode1);
+        Transacoes.Transferir(c3, c1, QRCode1);
+
+        // Segunda transação
+        QRCode2 = Transacoes.GerarQRCode(c2, 1000);
+        // Conferindo
+        System.out.println("Segundo QRCode: " + QRCode2);
+        Transacoes.Transferir(c3, c2, QRCode2);
+
 
         
         // Imprimindo estados inicial e final
         System.out.println("Estado inicial: ");
-        System.out.println("\nUsuario: " + user1.getNome() + " --->" + " Saldo: " + c1.getSaldo());
-        System.out.println("\nUsuario: " + user2.getNome() + " --->" + " Saldo: " + c2.getSaldo());
-        System.out.println("\nUsuario: " + user3.getNome() + " --->" + " Saldo: " + c3.getSaldo());
-        System.out.println("\nEstado final: ");
-        System.out.println("\nUsuario: " + user1.getNome() + " --->" + " Saldo: " + c1.getSaldo());
-        System.out.println("\nUsuario: " + user2.getNome() + " --->" + " Saldo: " + c2.getSaldo());
-        System.out.println("\nUsuario: " + user3.getNome() + " --->" + " Saldo: " + c3.getSaldo());
+        System.out.println("Usuario: " + user1.getNome() + " --->" + " Saldo: " + c1.getSaldo());
+        System.out.println("Usuario: " + user2.getNome() + " --->" + " Saldo: " + c2.getSaldo());
+        System.out.println("Usuario: " + user3.getNome() + " --->" + " Saldo: " + c3.getSaldo());
+        System.out.println("Estado final: ");
+        System.out.println("Usuario: " + user1.getNome() + " --->" + " Saldo: " + c1.getSaldo());
+        System.out.println("Usuario: " + user2.getNome() + " --->" + " Saldo: " + c2.getSaldo());
+        System.out.println("Usuario: " + user3.getNome() + " --->" + " Saldo: " + c3.getSaldo());
 
     }
 }

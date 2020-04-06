@@ -8,17 +8,22 @@ public class Contas {
     private Usuarios user;
 
     // Construtores
-    Contas(Usuarios user, double saldo){
-        this.saldo = saldo;
+    Contas(Usuarios user, double saldoInicial){
+        this.user = user;
+        this.saldo = saldoInicial;
         contador = contador + 1;
-        this.idConta = String.valueof(contador);
+        this.idConta = String.valueOf(contador);
     }
 
     public String getId(){
         return idConta;
     }
-    public void SaldoFinal(double saldo){
 
+    public Usuarios getUser(){
+        return user;
+    }
+    public double SaldoFinal(double saldo){
+       return saldo;
     }
 
     public double getSaldo(){
