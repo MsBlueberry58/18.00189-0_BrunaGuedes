@@ -3,24 +3,21 @@
 import java.util.Random;
 
 public class Transacoes {
-    private static Contas conta, conta1, conta2;
-    private static int numero;
-    private static double valor;
-    private static String QRCode;
 
-    public static String GerarQRCode(Contas conta1, double valor) {
-        return String.format("{%s;%s;%s;%s}", 
-        conta1.getId(), conta1.getUser().getNome(), 
+    // A conta 1 gera um QRCOde, pedindo uma transferência de um certo valor
+    public static String GerarQRCode(Contas conta, double valor) {
+        return String.format("%s;%s;%s;%s", 
+        conta.getId(), conta.getUser().getNome(), 
         String.valueOf(valor), String.valueOf(getRandomNumberInRange(1000, 9999)));
     }
 
+    // Transferir dinheiro da conta 1 para a conta 2
     public static void Transferir(Contas conta1, Contas conta2, String QRCode) {
         String[] dados = QRCode.split(";");
-        double saldo1Novo, saldo2Novo;
-        if ((conta1.getId().equals(dados[0]))) {
-            if ((conta1.getSaldo()) >= (Integer.parseInt(dados[2]))) {
-                saldo1Novo = conta1.getSaldo() + Integer.parseInt(dados[2]);
-                saldo2Novo = conta2.getSaldo() + Integer.parseInt(dados[2]);
+        if (((conta2.getId()).equals(dados[0]))) {
+            if ((conta1.getSaldo()) >= (Double.parseDouble(dados[2]))) {
+                conta1.Sacar(Double.parseDouble(dados[2]));
+                conta2.Depositar(Double.parseDouble(dados[2]));
             } else {
                 System.out.println("Saldo insuficiente.");
             }

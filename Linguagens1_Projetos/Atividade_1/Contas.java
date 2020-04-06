@@ -22,10 +22,15 @@ public class Contas {
     public Usuarios getUser(){
         return user;
     }
-    public double SaldoFinal(double saldo){
-       return saldo;
+
+    public void Sacar(double valor){
+            this.saldo -= valor; 
     }
 
+    public void Depositar(double valor){
+            this.saldo += valor;
+    }
+    
     public double getSaldo(){
         return saldo;
     }
