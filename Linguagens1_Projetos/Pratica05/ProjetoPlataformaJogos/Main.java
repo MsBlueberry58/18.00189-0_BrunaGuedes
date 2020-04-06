@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public static void main(String[]args){
         Scanner scanner = new Scanner(System.in);
-        String e xec = "1";
+        String exec = "1";
 
         // Criar conta
         String nick, senha, email;
