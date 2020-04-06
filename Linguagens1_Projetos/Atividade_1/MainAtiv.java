@@ -10,7 +10,7 @@ public class MainAtiv {
         String nome1, nome2, nome3; 
         String senha1, senha2, senha3; 
         String email1, email2, email3;
-        String[] QRCode1, QRCode2;
+        String QRCode1, QRCode2;
         // Criação do usuário 1
         System.out.println("Digite o nome do primeiro usuario: ");
         nome1 = scanner.nextLine();
@@ -54,6 +54,7 @@ public class MainAtiv {
         QRCode1 = Transacoes.GerarQRCode(c1, 250);
         // Conferindo
         System.out.println("Primeiro QRCode: " + QRCode1);
+        Transacoes.Transferir(c2, c1, QRCode1);
         Transacoes.Transferir(c2, c1, QRCode1);
         Transacoes.Transferir(c3, c1, QRCode1);
 

@@ -1,23 +1,21 @@
 // Bruna Galastri Guedes
 // 18.00189-0
+import java.util.Random;
 
 public class Transacoes {
     private static Contas conta, conta1, conta2;
     private static int numero;
     private static double valor;
     private static String QRCode;
-    private static String[] dados = QRCode.split(";");
 
-    public static String[] GerarQRCode(Contas conta, double valor) {
-        Transacoes.valor = valor;
-        dados[0] = conta.getId();
-        dados[1] = conta.getUser().getNome();
-        dados[2] = String.valueOf(valor);
-        dados[3] = String.valueOf(getRandomNumberInRange(1000, 9999));
-        return dados;
+    public static String GerarQRCode(Contas conta1, double valor) {
+        return String.format("{%s;%s;%s;%s}", 
+        conta1.getId(), conta1.getUser().getNome(), 
+        String.valueOf(valor), String.valueOf(getRandomNumberInRange(1000, 9999)));
     }
 
-    public static void Transferir(Contas conta1, Contas conta2, String[] dados) {
+    public static void Transferir(Contas conta1, Contas conta2, String QRCode) {
+        String[] dados = QRCode.split(";");
         double saldo1Novo, saldo2Novo;
         if ((conta1.getId().equals(dados[0]))) {
             if ((conta1.getSaldo()) >= (Integer.parseInt(dados[2]))) {
