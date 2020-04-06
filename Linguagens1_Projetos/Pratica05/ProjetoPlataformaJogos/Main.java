@@ -1,8 +1,12 @@
 import java.util.Scanner;
 
-public static void main(String[]args){
+public class Main {
+
+    public static void main(String[]args){
+
         Scanner scanner = new Scanner(System.in);
         String exec = "1";
+        String loguser, logpass;
 
         // Criar conta
         String nick, senha, email;
@@ -10,22 +14,21 @@ public static void main(String[]args){
         System.out.println("Criacao de conta\n");
         System.out.println("Digite um nick: ");
         nick = scanner.nextLine();
-        System.out.println("Crie uma senha: ");
+        Sy stem.out.println("Crie uma senha: ");
         senha = scanner.nextLine();
         System.out.println("Digite seu email: "); 
         email = scanner.nextLine();
         Usuario user = new Usuario(nick, senha, email);
-        Conta conta = new Conta (user);
+        Conta  conta = new Conta (user); 
         System.out.println("Nova conta criada com sucesso: \nUser: " + user.getNickname() + "\nConta: " + conta.getInfo());
 
-         // Login
-        System.out.println("Login\n");
-        String lognick, logpass;
+
+        // Login
         do{
             System.out.println("Digite seu nick: ");
             loguser = scanner.nextLine();
             System.out.println("Digite sua senha: ");
-            logpass = scanner.nextLine();
+             logpass = scanner.nextLine();
 
         } while(!((loguser.equals(nick)) && (logpass.equals(senha))));
         
@@ -119,3 +122,4 @@ public static void main(String[]args){
     
         } while(exec.equals("1"));
     }
+}
