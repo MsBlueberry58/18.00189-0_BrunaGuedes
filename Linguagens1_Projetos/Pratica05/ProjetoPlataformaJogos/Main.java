@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-    public static  void main(String[] args) {
+public static void main(String[]args){
         Scanner scanner = new Scanner(System.in);
-        String exec = "1";
+        String e xec = "1";
 
         // Criar conta
         String nick, senha, email;
@@ -10,21 +10,22 @@ import java.util.Scanner;
         System.out.println("Criacao de conta\n");
         System.out.println("Digite um nick: ");
         nick = scanner.nextLine();
-        Sy stem.out.println("Crie uma senha: ");
+        System.out.println("Crie uma senha: ");
         senha = scanner.nextLine();
         System.out.println("Digite seu email: "); 
         email = scanner.nextLine();
         Usuario user = new Usuario(nick, senha, email);
-        Conta  conta = new Conta (user); 
+        Conta conta = new Conta (user);
         System.out.println("Nova conta criada com sucesso: \nUser: " + user.getNickname() + "\nConta: " + conta.getInfo());
 
-        // Login
-        String loguser, logpass;            
+         // Login
+        System.out.println("Login\n");
+        String lognick, logpass;
         do{
             System.out.println("Digite seu nick: ");
             loguser = scanner.nextLine();
             System.out.println("Digite sua senha: ");
-             logpass = scanner.nextLine();
+            logpass = scanner.nextLine();
 
         } while(!((loguser.equals(nick)) && (logpass.equals(senha))));
         
@@ -83,6 +84,7 @@ import java.util.Scanner;
                 System.out.println("Deseja continuar adicionando? (s/n): ");
                 op = scanner.nextLine();
             } while (op.equals("s"));
+
             exec.equals("1");
 
             
@@ -90,8 +92,20 @@ import java.util.Scanner;
     
         // Criar outra conta
         else if(choice.equals("5")){
-            
-        }
+            String nick, senha, email;
+            double cred = 0;
+            System.out.println("Criacao de conta\n");
+            System.out.println("Digite um nick: ");
+            nick = scanner.nextLine();
+            System.out.println("Crie uma senha: ");
+            senha = scanner.nextLine();
+            System.out.println("Digite seu email: "); 
+            email = scanner.nextLine();
+            Usuario user = new Usuario(nick, senha, email);
+            Conta conta = new Conta (user);
+            System.out.println("Nova conta criada com sucesso: \nUser: " + user.getNickname() + "\nConta: " + conta.getInfo());
+            exec.equals("1");
+            }
     
         // Logout
         else if(choice.equals("6")){
@@ -99,7 +113,7 @@ import java.util.Scanner;
         }
 
         else{
-            System.out.println("Comando invalido! Tente novamente.\n")
+            System.out.println("Comando invalido! Tente novamente.")
             exec.equals("1");
         }
     
