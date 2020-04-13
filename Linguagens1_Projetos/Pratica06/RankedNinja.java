@@ -1,5 +1,5 @@
 
-public class RankedNinja {
+public class RankedNinja extends Ninja {
     private  String mission;
 
     public void GoToMission(){
