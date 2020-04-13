@@ -6,6 +6,8 @@ public class Main {
         ninja.train();
         AcademyStudent acadmeystudent = new AcademyStudent();
         acadmeystudent.train();
+        Chuunin chuunin = new Chuunin();
+        chuunin.train();
     }
 
 }
