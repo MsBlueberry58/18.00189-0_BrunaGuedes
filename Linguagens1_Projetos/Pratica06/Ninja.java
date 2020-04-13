@@ -2,7 +2,7 @@
 public class Ninja {
     private String name;
     private String family;
-    private String jutsus;
+    private String[] jutsus;
 
     public Ninja(String name, String family){
         this.name = name;

@@ -4,4 +4,9 @@ public class Jounin extends RankedNinja {
         super(name, family, mission);
     }
 
+    @Override
+    public void train(){
+        System.out.println("Treinando para" + mission);
+    }
+
 }
