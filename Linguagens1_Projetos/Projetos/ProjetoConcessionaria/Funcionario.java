@@ -1,13 +1,18 @@
 
 
 public class Funcionario {
-    private double salarioBase;
-    private final double comissao;
+    protected double salarioBase;
+    protected double comissao;
 
-    //Construtor
+    //Construtores
     public Funcionario(double salarioBase){
         this.salarioBase = salarioBase;
         this.comissao = 0.05;
+    }
+
+    public Funcionario(double salarioBase, double comissao){
+        this.salarioBase = salarioBase;
+        this.comissao = comissao;
     }
 
     public double getSalarioBase() {
