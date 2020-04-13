@@ -1,6 +1,6 @@
 
 
-public class Funcionario {
+public static class Funcionario {
     protected double salarioBase;
     protected double comissao;
 
