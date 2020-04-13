@@ -3,14 +3,20 @@
 public class Main {
     public static void main(String[] args) {
         Ninja ninja = new Ninja("Naruto", "Uzumaki");
-        ninja.train();
-        AcademyStudent academyStudent = new AcademyStudent("Sasuke", "Uchiha");
-        academyStudent.train();
+        MostrarTreino(ninja); 
+        Ninja academyStudent = new AcademyStudent("Sasuke", "Uchiha");
+        MostrarTreino(academyStudent);
         Chuunin chuunin = new Chuunin("Iruka","Umino", "Treinar XYZ");
-        chuunin.train();
-        chuunin.goToMission();
+        MostrarTreino(chuunin);
         Jounin jounin = new Jounin("Kakashi", "Hatake", "Train Sasuke");
-        jounin.goToMission();
+        MostrarTreino(jounin);
+
+    
+    }
+
+    static void MostrarTreino(Ninja ninja){
+        ninja.train();
+       
     }
 
 }
