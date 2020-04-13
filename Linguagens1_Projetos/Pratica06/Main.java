@@ -2,12 +2,13 @@
 
 public class Main {
     public static void main(String[] args) {
-        Ninja ninja = new Ninja();
+        Ninja ninja = new Ninja("Naruto", "Uzumaki");
         ninja.train();
-        AcademyStudent acadmeystudent = new AcademyStudent();
-        acadmeystudent.train();
-        Chuunin chuunin = new Chuunin();
+        AcademicStudent academicStudent = new AcademicStudent("Sasuke", "Uchiha");
+        academicStudent.train();
+        Chuunin chuunin = new Chuunin("Iruka","Umino", "Treinar XYZ");
         chuunin.train();
+        chuunin.goToMission();
     }
 
 }
