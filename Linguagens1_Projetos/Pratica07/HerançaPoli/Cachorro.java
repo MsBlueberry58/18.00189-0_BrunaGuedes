@@ -1,5 +1,5 @@
 
-public class Cachorro extends Animal {
+public class Cachorro extends Canino implements Locomover {
     @Override
     public void comer(){
         System.out.println("Au, au!");

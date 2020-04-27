@@ -1,5 +1,5 @@
 
-public class Lobo extends Animal {
+public class Lobo extends extends Canino implements Locomover {
 
     @Override
     public void comer(){

@@ -1,34 +1,38 @@
 import java.util.ArrayList;
 
-
 public class Main {
-    
+
     public static void main(String[] args) {
-    Cachorro cachorro = new Cachorro();
-    Lobo lobo = new Lobo();
-    Peixe peixe = new Peixe();
+        Cachorro cachorro = new Cachorro();
+        Lobo lobo = new Lobo();
+        Peixe peixe = new Peixe();
 
-    ArrayList<Animal> animals = new ArrayList ();
-    animals.add(cachorro);
-    animals.add(lobo);
-    animals.add(peixe);
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(cachorro);
+        animals.add(lobo);
+        animals.add(peixe);
 
+        //Método 2
+        System.out.println("Enhanced For (Foreach):");
+        for (Animal animal : animals) {
+            animal.comer();
+            if(animal instanceof Canino){
+                System.out.println("Canino!");
+                ComportamentoCanino((Canino)animal);
+            }
+        }
 
-    //Método 1
-    System.out.println("For Tradicional: ");
-    for (int i = 0; i < animals.size(); i++){
-        animals.get(i).comer();
+        andaAe(cachorro);
+        andaAe(lobo);
+        andaAe(peixe);
+
     }
 
-    //Método 2
-    System.out.println("Enhanced For (Foreach)");
-    for (Animal animal : animals) {
-        animal.comer();
+    public static void ComportamentoCanino(Canino canino){
+        canino.cheirar();
     }
 
-    cachorro.comer();
-    lobo.comer();
-    peixe.comer();
-}
-
+    public static void andaAe(Locomover locomover){
+        locomover.comoMeLocomovo();
+    }
 }
