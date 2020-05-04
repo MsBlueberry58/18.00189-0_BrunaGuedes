@@ -1,5 +1,5 @@
-import pacote.Dog;
-import pacote.QlqrCoisa;
+import pacote;
+
 
 
 public class Main {
