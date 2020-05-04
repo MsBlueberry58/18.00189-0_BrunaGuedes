@@ -13,6 +13,7 @@ public class Main {
         }
         catch (Exception exception){
             System.out.println("Algo inexperado aconteceu!");
+            System.out.println(exception.getMessage());
         }
         System.out.println("fim do metodo1");
     }
@@ -30,6 +31,7 @@ public class Main {
             System.out.println("Tentou acessar posição inválida:");
             exception.printStackTrace();
             System.out.println(exception.getMessage());
+            throw new Exception("Deu Ruim Aqui!");
         }
         System.out.println("fim do metodo2");
     }
