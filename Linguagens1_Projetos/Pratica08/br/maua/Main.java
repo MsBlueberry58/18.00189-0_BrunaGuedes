@@ -1,6 +1,5 @@
-import pacote;
-
-
+package br.maua.main;
+import pacote.Dog;
 
 public class Main {
     public static void main(String[] args) {
