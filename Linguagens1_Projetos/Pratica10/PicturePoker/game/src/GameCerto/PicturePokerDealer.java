@@ -1,4 +1,4 @@
-package app.GameCerto;
+package GameCerto;
 
 public class PicturePokerDealer {
     
