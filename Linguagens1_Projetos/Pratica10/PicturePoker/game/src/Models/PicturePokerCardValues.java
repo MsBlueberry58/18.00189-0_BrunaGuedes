@@ -1,5 +1,5 @@
 package Models;
 
-public class PicturePokerCardValues {
-    
+public enum PicturePokerCardValues {
+    CLOUD, SUPER_MUSHROOM, FIRE_FLOWER, LUIGI, MARIO, SUPER_STAR;
 }
