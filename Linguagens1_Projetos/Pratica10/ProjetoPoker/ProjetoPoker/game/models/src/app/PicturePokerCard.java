@@ -1,7 +1,11 @@
 package app;
 
+import game.models.PicturePokerCardValues;
+
 public class PicturePokerCard {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello Java");
+    private PicturePokerCardValues value;
+
+    public PicturePokerCard(PicturePokerCardValues){
+        this.value = value;
     }
 }
