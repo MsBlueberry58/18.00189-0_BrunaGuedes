@@ -8,14 +8,14 @@ public class MobileMembers extends Funcionario implements PostarMensagem{
    
     @Override
     public void MsgNormal() {
-        System.out.println("");
+        System.out.println("Happy Coding!");
 
     }
     
 
     @Override
     public void MsgExtra() {
-        System.out.println("");
+        System.out.println("MAsK_S0c13ty");
 
     }
 
