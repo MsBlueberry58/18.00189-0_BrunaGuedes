@@ -5,6 +5,8 @@
 
 package app;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 import models.BigBrothers;
@@ -12,12 +14,17 @@ import models.Funcionario;
 import models.HeavyLifters;
 import models.MobileMembers;
 import models.ScriptGuys;
+import num.Funcoes;
 import num.Horarios;
+import outros.Lista;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         Horarios horario = Horarios.NORMAL;
         int op;
+        HashMap<String, Funcoes> FuncList = new HashMap<>();
+        ArrayList<Funcionario> EmploList = new ArrayList<>();
+
         System.out.println("Bem-vindo!");
 
         do {
@@ -31,6 +38,7 @@ public class Main {
             switch (op) {
                 case 1:
                     int opc;
+                    String email, name;
                     Scanner scanner2 = new Scanner(System.in);
                     System.out.println(
                             "Digite o cargo que deseja: \n 1 - Script Guy \n 2  - Mobile Member \n 3 - HeaVY Lifter \n 4 - Big Brother");
@@ -38,13 +46,14 @@ public class Main {
 
                     switch (opc) {
                         case 1:
-                            String email, name;
-                            System.out.println("Digite o nome do usuario: \n");
+
+                            System.out.println("Digite o nome do usuario: ");
                             name = scanner2.nextLine();
-                            System.out.println("Digite o email do usuario: \n");
+                            System.out.println("Digite o email do usuario: ");
                             email = scanner2.nextLine();
 
                             Funcionario employee1 = new ScriptGuys(name, email);
+                            FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
                         case 2:
@@ -55,6 +64,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee2 = new MobileMembers(name, email);
+                            FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
                         case 3:
@@ -65,6 +75,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee3 = new HeavyLifters(name, email);
+                            FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
                         case 4:
@@ -75,6 +86,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee4 = new BigBrothers(name, email);
+                            FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
 
@@ -94,6 +106,16 @@ public class Main {
 
                     break;
                 case 4:
+                    if (horario == Horarios.NORMAL) {
+                        for (Funcionario value : EmploList) {
+                            value.MsgNormal();
+                        }
+
+                    } else {
+                        for (Funcionario value : EmploList) {
+                            value.MsgExtra();
+                        }
+                    }
 
                     break;
 
