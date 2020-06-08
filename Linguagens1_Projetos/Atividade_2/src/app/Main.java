@@ -8,8 +8,8 @@ package app;
 import java.util.Scanner;
 
 import models.Funcionario;
+import models.ScriptGuys;
 import num.Horarios;
-
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -28,12 +28,43 @@ public class Main {
             
             switch (op) {
                 case 1:
+                String name, email;
+                int opc;
                 Scanner scanner2 = new Scanner(System.in);
-                System.out.println("Digite o usuario e o email do funcionario: \n");
+                System.out.println("Digite o cargo que deseja: \n 1 - Script Guy \n 2  - Mobile Member \n 3 - HeaVY Lifter \n 4 - Big Brother");
+                opc = scanner2.nextInt();
+                
+                switch (opc) {
+                    case 1:
+                    System.out.println("Digite o nome e o email do funcionario: \n");
+                    System.out.println("Nome: \n");
+                    name = scanner2.nextLine();
+                    System.out.println("Email: \n");
+                    email = scanner2.nextLine();
+
+                    Funcionario employee = new ScriptGuys(name, email);
+
+                        break;
+                    case 2:
+                    System.out.println("Digite o nome e o email do funcionario: \n");
 
 
-                    break;
+                        break;
+                    case 3:
+                        System.out.println("Digite o nome e o email do funcionario: \n");
 
+
+                            break;
+                    case 4:
+                        System.out.println("Digite o nome e o email do funcionario: \n");
+
+
+                            break;
+                                            
+                
+                    
+                }
+                
                 case 2:
                 Scanner scanner3 = new Scanner(System.in);
                 System.out.println("Escolha o funcionario que deseja remover: \n");

@@ -6,7 +6,12 @@ import models.Funcionario;
 public class BigBrothers extends Funcionario implements PostarMensagem{
 
 
-    //Construtor
+      //Construtor  
+      public BigBrothers(String nome, String email) {
+        super(nome, email);
+        
+    }
+
 
 
     @Override

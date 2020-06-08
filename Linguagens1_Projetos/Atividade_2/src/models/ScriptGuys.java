@@ -6,7 +6,12 @@ import models.Funcionario;
 public class ScriptGuys extends Funcionario implements PostarMensagem{
 
 
-    //Construtor
+      //Construtor  
+      public ScriptGuys(String nome, String email) {
+        super(nome, email);
+        
+    }
+
 
 
 

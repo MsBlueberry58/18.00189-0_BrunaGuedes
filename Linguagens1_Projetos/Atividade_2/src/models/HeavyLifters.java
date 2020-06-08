@@ -7,8 +7,10 @@ public class HeavyLifters extends Funcionario implements PostarMensagem {
 
 
     //Construtor  
-    
-
+    public HeavyLifters(String nome, String email) {
+        super(nome, email);
+        
+    }
 
     @Override
     public void MsgNormal() {
@@ -22,5 +24,6 @@ public class HeavyLifters extends Funcionario implements PostarMensagem {
         System.out.println("N00b_qu3_n_Se_r3pita.bat");
 
     }
-    
+
+  
 }

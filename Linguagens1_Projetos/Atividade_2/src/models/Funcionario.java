@@ -2,11 +2,10 @@ package models;
 
 
 public abstract class Funcionario {
-    String nome, user, email;
+    String nome, email;
 
-    public Funcionario(String nome, String user, String email) {
+    public Funcionario(String nome, String email) {
         this.nome = nome;
-        this.user = user;
         this.email = email;
     }
 
