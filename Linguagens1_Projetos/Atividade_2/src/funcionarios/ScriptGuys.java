@@ -11,7 +11,7 @@ public class ScriptGuys extends Funcionario implements PostarMensagem{
        
     public ScriptGuys(String user, String email, String function) {
         super(user, email, function);
-        // TODO Auto-generated constructor stub
+       
     }
 
     @Override

@@ -11,7 +11,7 @@ public class BigBrothers extends Funcionario implements PostarMensagem{
        
     public BigBrothers(String user, String email, String function) {
         super(user, email, function);
-        // TODO Auto-generated constructor stub
+       
     }
 
     @Override
