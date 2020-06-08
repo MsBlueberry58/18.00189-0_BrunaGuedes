@@ -124,13 +124,13 @@ public class Main {
                         if(func instanceof ScriptGuys){
                             System.out.println("Nome: " + func.getNome() + "Cargo: " + Funcoes.SCRIPT_GUYS);
                         }
-                        elif(func instanceof MobileMembers){
+                        else if(func instanceof MobileMembers){
                             System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.MOBILE_MEMBERS);
                         }
-                        elif(func instanceof HeavyLifters){
+                        else if(func instanceof HeavyLifters){
                             System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.HEAVY_LIFTERS);
                         }
-                        elif(func instanceof BigBrothers){
+                        else if(func instanceof BigBrothers){
                             System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.BIG_BROTHERS);
                         }
                     }
@@ -182,17 +182,16 @@ public class Main {
                     if(func instanceof ScriptGuys){
                         System.out.println("Nome: " + func.getNome() + "Cargo: " + Funcoes.SCRIPT_GUYS);
                     }
-                    elif(func instanceof MobileMembers){
+                    else if(func instanceof MobileMembers){
                         System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.MOBILE_MEMBERS);
                     }
-                    elif(func instanceof HeavyLifters){
+                    else if(func instanceof HeavyLifters){
                         System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.HEAVY_LIFTERS);
                     }
-                    elif(func instanceof BigBrothers){
+                    else if(func instanceof BigBrothers){
                         System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.BIG_BROTHERS);
                     }
                 }
-
 
                 break;
 
