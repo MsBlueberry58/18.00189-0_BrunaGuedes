@@ -13,6 +13,17 @@ public abstract class Funcionario implements PostarMensagem{
         this.email = email;
     }
 
+    public String getNome() {
+        return nome;
+    }
+ 
+
+    public String getEmail() {
+        return email;
+    }
+
+  
+
     
 
     
