@@ -5,7 +5,14 @@ import models.Funcionario;
 
 public class MobileMembers extends Funcionario implements PostarMensagem{
 
+
    
+   
+    public MobileMembers(String user, String email, String function) {
+        super(user, email, function);
+        
+    }
+
     @Override
     public void MsgNormal() {
         System.out.println("Happy Coding!");
@@ -18,5 +25,7 @@ public class MobileMembers extends Funcionario implements PostarMensagem{
         System.out.println("MAsK_S0c13ty");
 
     }
+
+   
 
 } 

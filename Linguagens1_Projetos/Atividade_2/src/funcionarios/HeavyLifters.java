@@ -5,7 +5,15 @@ import models.Funcionario;
 
 public class HeavyLifters extends Funcionario implements PostarMensagem {
 
+
+    //Construtor
+
      
+    public HeavyLifters(String user, String email, String function) {
+        super(user, email, function);
+        // TODO Auto-generated constructor stub
+    }
+
     @Override
     public void MsgNormal() {
         System.out.println("Podem contar conosco!");

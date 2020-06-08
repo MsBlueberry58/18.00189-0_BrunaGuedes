@@ -5,7 +5,15 @@ import models.Funcionario;
 
 public class ScriptGuys extends Funcionario implements PostarMensagem{
 
+
+    //Construtor
+
        
+    public ScriptGuys(String user, String email, String function) {
+        super(user, email, function);
+        // TODO Auto-generated constructor stub
+    }
+
     @Override
     public void MsgNormal() {
         System.out.println("Prazer em ajudar novos amigos de código!");
