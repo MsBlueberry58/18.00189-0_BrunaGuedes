@@ -53,6 +53,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee1 = new ScriptGuys(name, email);
+                            EmploList.add(employee1);
                             FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
@@ -64,6 +65,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee2 = new MobileMembers(name, email);
+                            EmploList.add(employee2);
                             FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
@@ -75,6 +77,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee3 = new HeavyLifters(name, email);
+                            EmploList.add(employee3);
                             FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
@@ -86,6 +89,7 @@ public class Main {
                             email = scanner2.nextLine();
 
                             Funcionario employee4 = new BigBrothers(name, email);
+                            EmploList.add(employee4);
                             FuncList.put(name, Funcoes.SCRIPT_GUYS);
 
                             break;
