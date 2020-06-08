@@ -39,9 +39,10 @@ public class Main {
 
             switch (op) {
                 case 1:
+                    Funcionario func1;
                     String name, email;
                     int opc;
-                    Funcionario func;
+                    
 
                     System.out.println(
                             "Digite o cargo que deseja: \n 1 - Script Guy \n 2 - Mobile Member \n 3 - Heavy Lifter \n 4 - Big Brother");
@@ -56,9 +57,9 @@ public class Main {
                             System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
-                            func = new ScriptGuys(name, email);
-                            EmploList.add(func);
-                            System.out.println("Nome: " + func.getNome() + "\tEmail: " + func.getEmail() + "\tCargo: "
+                            func1 = new ScriptGuys(name, email);
+                            EmploList.add(func1);
+                            System.out.println("Nome: " + func1.getNome() + "\tEmail: " + func1.getEmail() + "\tCargo: "
                                     + Funcoes.SCRIPT_GUYS);
 
                             break;
@@ -68,9 +69,9 @@ public class Main {
                             System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
-                            func = new MobileMembers(name, email);
-                            EmploList.add(func);
-                            System.out.println("Nome: " + func.getNome() + "\tEmail: " + func.getEmail() + "\tCargo: "
+                            func1 = new MobileMembers(name, email);
+                            EmploList.add(func1);
+                            System.out.println("Nome: " + func1.getNome() + "\tEmail: " + func1.getEmail() + "\tCargo: "
                                     + Funcoes.MOBILE_MEMBERS);
 
                             break;
@@ -80,9 +81,9 @@ public class Main {
                             System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
-                            func = new HeavyLifters(name, email);
-                            EmploList.add(func);
-                            System.out.println("Nome: " + func.getNome() + "\tEmail: " + func.getEmail() + "\tCargo: "
+                            func1 = new HeavyLifters(name, email);
+                            EmploList.add(func1);
+                            System.out.println("Nome: " + func1.getNome() + "\tEmail: " + func1.getEmail() + "\tCargo: "
                                     + Funcoes.HEAVY_LIFTERS);
 
                             break;
@@ -92,11 +93,10 @@ public class Main {
                             System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
-                            EmploList.add(new BigBrothers(name, email));
 
-                            func = new BigBrothers(name, email);
-                            EmploList.add(func);
-                            System.out.println("Nome: " + func.getNome() + "\tEmail: " + func.getEmail() + "\tCargo: "
+                            func1 = new BigBrothers(name, email);
+                            EmploList.add(func1);
+                            System.out.println("Nome: " + func1.getNome() + "\tEmail: " + func1.getEmail() + "\tCargo: "
                                     + Funcoes.BIG_BROTHERS);
 
                             break;
