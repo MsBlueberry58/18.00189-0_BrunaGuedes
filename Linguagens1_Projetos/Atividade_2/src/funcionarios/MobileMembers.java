@@ -3,12 +3,9 @@ package funcionarios;
 import interfaces.PostarMensagem;
 import models.Funcionario;
 
-public class MobileMembers extends Funcionario implements PostarMensagem{
+public class MobileMembers extends User implements PostarMensagem{
 
    
-    public MobileMembers(String user, String email, String function) {
-        super(user, email, function);
-        
     }
 
     @Override

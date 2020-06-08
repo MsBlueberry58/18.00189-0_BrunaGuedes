@@ -3,16 +3,12 @@ package funcionarios;
 import interfaces.PostarMensagem;
 import models.Funcionario;
 
-public class ScriptGuys extends Funcionario implements PostarMensagem{
+public class ScriptGuys extends User implements PostarMensagem{
 
 
     //Construtor
 
-       
-    public ScriptGuys(String user, String email, String function) {
-        super(user, email, function);
-       
-    }
+
 
     @Override
     public void MsgNormal() {

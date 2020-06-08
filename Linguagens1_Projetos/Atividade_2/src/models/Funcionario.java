@@ -1,13 +1,15 @@
 package models;
 
-public abstract class Funcionario {
-    String user, email, function;
+import funcionarios.User;
 
-    public Funcionario(String user, String email, String function) {
-        this.user = user;
-        this.email = email;
-        this.function = function;
+public abstract class Funcionario extends User {
+
+    public Funcionario(String user, String email) {
+        super(user, email);
     }
+
+    
+    
 
     
     
