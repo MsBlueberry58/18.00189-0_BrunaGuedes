@@ -17,8 +17,10 @@ import models.ScriptGuys;
 import num.Horarios;
 import num.Funcoes;
 
-/** App principal, onde ocorrem interações com o usuário, envolvendo input, menu, etc... */
-
+/**
+ * App principal, onde ocorrem interações com o usuário, envolvendo input, menu,
+ * etc...
+ */
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -33,13 +35,14 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Horario de trabalho atual: " + horario);
             System.out.println(
-                    "Menu: \n 1- Cadastrar usuario \n 2 - Remover usuario \n 3 - Trocar horario de trabalho \n 4 - Postar mensagens \n 0 - Sair \n");
+                    "Menu: \n 1- Cadastrar usuario \n 2 - Remover usuario \n 3 - Trocar horario de trabalho \n 4 - Postar mensagens \n 5 - Mostrar funcionarios \n 0 - Sair \n");
             op = Integer.parseInt(scanner.nextLine());
 
             switch (op) {
                 case 1:
+                    String name, email;
                     int opc;
-                    String email;
+
                     System.out.println(
                             "Digite o cargo que deseja: \n 1 - Script Guy \n 2  - Mobile Member \n 3 - Heavy Lifter \n 4 - Big Brother");
                     opc = Integer.parseInt(scanner.nextLine());
@@ -49,63 +52,101 @@ public class Main {
                         case 1:
 
                             System.out.println("Digite o nome do usuario: ");
-                            String name = scanner.nextLine();
+                            name = scanner.nextLine();
                             System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
-                            
+
                             EmploList.add(new ScriptGuys(name, email));
-                            
+
+                            for (Funcionario func : EmploList) {
+                                System.out.println("Nome: " + func.getNome());
+                                System.out.println("Email: " + func.getEmail());
+                                System.out.println("Cargo: " + Funcoes.SCRIPT_GUYS);
+
+                            }
 
                             break;
                         case 2:
-                            System.out.println("Digite o nome e o email do funcionario: \n");
-                            System.out.println("Nome: \n");
+                            System.out.println("Digite o nome do usuario: ");
                             name = scanner.nextLine();
-                            System.out.println("Email: \n");
+                            System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
                             EmploList.add(new MobileMembers(name, email));
-                            
+
+                            for (Funcionario func : EmploList) {
+                                System.out.println("Nome: " + func.getNome());
+                                System.out.println("Email: " + func.getEmail());
+                                System.out.println("Cargo: " + Funcoes.MOBILE_MEMBERS);
+
+                            }
 
                             break;
                         case 3:
-                            System.out.println("Digite o nome e o email do funcionario: \n");
-                            System.out.println("Nome: \n");
+                            System.out.println("Digite o nome do usuario: ");
                             name = scanner.nextLine();
-                            System.out.println("Email: \n");
+                            System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
                             EmploList.add(new HeavyLifters(name, email));
-                            
+
+                            for (Funcionario func : EmploList) {
+                                System.out.println("Nome: " + func.getNome());
+                                System.out.println("Email: " + func.getEmail());
+                                System.out.println("Cargo: " + Funcoes.HEAVY_LIFTERS);
+
+                            }
 
                             break;
                         case 4:
-                            System.out.println("Digite o nome e o email do funcionario: \n");
-                            System.out.println("Nome: \n");
+                            System.out.println("Digite o nome do usuario: ");
                             name = scanner.nextLine();
-                            System.out.println("Email: \n");
+                            System.out.println("Digite o email do usuario: ");
                             email = scanner.nextLine();
 
                             EmploList.add(new BigBrothers(name, email));
-                            
+
+                            for (Funcionario func : EmploList) {
+                                System.out.println("Nome: " + func.getNome());
+                                System.out.println("Email: " + func.getEmail());
+                                System.out.println("Cargo: " + Funcoes.BIG_BROTHERS);
+
+                            }
 
                             break;
 
                     }
-
+                    break;
                 case 2:
                     String demitido;
-                    Scanner scanner3 = new Scanner(System.in);
-                    System.out.println("Escolha o nome do funcionario que deseja remover: \n");
-                    demitido = scanner3.nextLine();
 
-                    for(Funcionario func : EmploList){
-                        if(demitido.equals(func.getNome())){
+                    for (Funcionario func : EmploList) {
+                        if(func instanceof ScriptGuys){
+                            System.out.println("Nome: " + func.getNome() + "Cargo: " + Funcoes.SCRIPT_GUYS);
+                        }
+                        elif(func instanceof MobileMembers){
+                            System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.MOBILE_MEMBERS);
+                        }
+                        elif(func instanceof HeavyLifters){
+                            System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.HEAVY_LIFTERS);
+                        }
+                        elif(func instanceof BigBrothers){
+                            System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.BIG_BROTHERS);
+                        }
+                    }
+
+                    System.out.println("Escolha o nome do funcionario que deseja remover: ");
+                    demitido = scanner.nextLine();
+
+                    for (Funcionario func : EmploList) {
+                        if (demitido.equals(func.getNome())) {
                             EmploList.remove(func);
+                            System.out.println("Funcionario " + func.getNome() + " removido com sucesso.");
                         }
                         else{
-                            System.out.println("Funcionario nao encontrado");
+                            System.out.println("Funcionario nao encontrado.");
                         }
+
                     }
 
                     break;
@@ -118,20 +159,42 @@ public class Main {
                     }
 
                     break;
-                    
+
                 case 4:
                     if (horario == Horarios.NORMAL) {
                         for (Funcionario value : EmploList) {
+                            System.out.println(value.getNome() + ": ");
                             value.MsgNormal();
                         }
 
                     } else {
                         for (Funcionario value : EmploList) {
+                            System.out.println(value.getNome() + ": ");
                             value.MsgExtra();
                         }
                     }
 
                     break;
+
+                case 5: 
+
+                for (Funcionario func : EmploList) {
+                    if(func instanceof ScriptGuys){
+                        System.out.println("Nome: " + func.getNome() + "Cargo: " + Funcoes.SCRIPT_GUYS);
+                    }
+                    elif(func instanceof MobileMembers){
+                        System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.MOBILE_MEMBERS);
+                    }
+                    elif(func instanceof HeavyLifters){
+                        System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.HEAVY_LIFTERS);
+                    }
+                    elif(func instanceof BigBrothers){
+                        System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.BIG_BROTHERS);
+                    }
+                }
+
+
+                break;
 
             }
 
