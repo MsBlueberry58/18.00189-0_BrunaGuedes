@@ -1,9 +1,9 @@
-package funcionarios;
+package models;
 
 import interfaces.PostarMensagem;
 import models.Funcionario;
 
-public class ScriptGuys extends User implements PostarMensagem{
+public class ScriptGuys extends Funcionario implements PostarMensagem{
 
 
     //Construtor

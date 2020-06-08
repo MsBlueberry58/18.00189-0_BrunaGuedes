@@ -1,15 +1,15 @@
 package models;
 
-import num.Funcoes;
-import outros.User;
 
-public abstract class Funcionario extends User {
+public abstract class Funcionario {
+    String nome, user, email;
 
-    public Funcionario(String user, Funcoes funcao) {
-        super(user, email);
+    public Funcionario(String nome, String user, String email) {
+        this.nome = nome;
+        this.user = user;
+        this.email = email;
     }
 
-    
     
 
     

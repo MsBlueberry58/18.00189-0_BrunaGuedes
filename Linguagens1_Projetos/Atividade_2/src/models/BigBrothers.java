@@ -1,9 +1,9 @@
-package funcionarios;
+package models;
 
 import interfaces.PostarMensagem;
 import models.Funcionario;
 
-public class BigBrothers extends User implements PostarMensagem{
+public class BigBrothers extends Funcionario implements PostarMensagem{
 
 
     //Construtor
