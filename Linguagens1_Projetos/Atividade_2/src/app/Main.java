@@ -13,16 +13,18 @@ import num.Horarios;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-
-        System.out.println("Bem-vindo!");
-        Horarios horario;
+        Horarios horario = Horarios.NORMAL;
         int op;
+        System.out.println("Bem-vindo!");
+        
+        
         do {
             
             Scanner scanner = new Scanner(System.in);
+            System.out.println("Horario de trabalho atual: " + horario);
             System.out.println("Menu: \n 1- Cadastrar usuario \n 2 - Remover usuario \n 3 - Trocar horario de trabalho \n 4 - Postar mensagens \n 0 - Sair \n");
             op = scanner.nextInt();
-            System.out.println("Horario de trabalho atual: " + Horarios.NORMAL);
+            
             
             switch (op) {
                 case 1:
@@ -39,7 +41,13 @@ public class Main {
 
                     break;
                 case 3:
-                if(Horarios.NORMAL.equals(horario))
+                if(horario == Horarios.NORMAL){
+                   horario =  Horarios.EXTRA;
+                }
+                else{
+                    horario =  Horarios.NORMAL;
+                }
+                
 
                     break;
                 case 4:
