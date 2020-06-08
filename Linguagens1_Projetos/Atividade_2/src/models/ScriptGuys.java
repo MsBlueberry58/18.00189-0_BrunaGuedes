@@ -1,9 +1,11 @@
 package models;
 
-import interfaces.PostarMensagem;
 import models.Funcionario;
 
-public class ScriptGuys extends Funcionario implements PostarMensagem{
+
+/** Um tipo de funcionário, possui suas próprias mensagens de PostarMensagem, e é filho de Funcionario */
+
+public class ScriptGuys extends Funcionario {
 
 
       //Construtor  

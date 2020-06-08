@@ -1,9 +1,10 @@
 package models;
 
-import interfaces.PostarMensagem;
 import models.Funcionario;
 
-public class HeavyLifters extends Funcionario implements PostarMensagem {
+/** Um tipo de funcionário, possui suas próprias mensagens de PostarMensagem, e é filho de Funcionario */
+
+public class HeavyLifters extends Funcionario {
 
 
     //Construtor  

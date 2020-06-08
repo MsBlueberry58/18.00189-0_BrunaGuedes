@@ -16,7 +16,6 @@ import models.MobileMembers;
 import models.ScriptGuys;
 import num.Funcoes;
 import num.Horarios;
-import outros.Lista;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -51,7 +50,7 @@ public class Main {
                             name = scanner2.nextLine();
                             System.out.println("Digite o email do usuario: ");
                             email = scanner2.nextLine();
-
+                            
                             Funcionario employee1 = new ScriptGuys(name, email);
                             EmploList.add(employee1);
                             FuncList.put(name, Funcoes.SCRIPT_GUYS);
@@ -97,8 +96,19 @@ public class Main {
                     }
 
                 case 2:
+                    String demitido;
+                    Funcionario demi;
                     Scanner scanner3 = new Scanner(System.in);
-                    System.out.println("Escolha o funcionario que deseja remover: \n");
+                    System.out.println("Escolha o nome do funcionario que deseja remover: \n");
+                    System.out.println(FuncList);
+                    
+                    //demitido = scanner3.nextLine();
+                    //if(demi.equals(obj))
+                    //EmploList.remove(FuncList.get(demitido));
+
+                    //FuncList.remove(demitido);
+
+                    
 
                     break;
                 case 3:
