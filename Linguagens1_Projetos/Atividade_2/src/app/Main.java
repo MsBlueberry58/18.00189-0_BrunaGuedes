@@ -14,8 +14,8 @@ import models.Funcionario;
 import models.HeavyLifters;
 import models.MobileMembers;
 import models.ScriptGuys;
-import num.Funcoes;
 import num.Horarios;
+import num.Funcoes;
 
 /** App principal, onde ocorrem interações com o usuário, envolvendo input, menu, etc... */
 
@@ -24,7 +24,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Horarios horario = Horarios.NORMAL;
         int op;
-        HashMap<String, Funcoes> FuncList = new HashMap<>();
         ArrayList<Funcionario> EmploList = new ArrayList<>();
 
         System.out.println("Bem-vindo!");
@@ -35,65 +34,60 @@ public class Main {
             System.out.println("Horario de trabalho atual: " + horario);
             System.out.println(
                     "Menu: \n 1- Cadastrar usuario \n 2 - Remover usuario \n 3 - Trocar horario de trabalho \n 4 - Postar mensagens \n 0 - Sair \n");
-            op = scanner.nextInt();
+            op = Integer.parseInt(scanner.nextLine());
 
             switch (op) {
                 case 1:
                     int opc;
                     String email;
-                    Scanner scanner2 = new Scanner(System.in);
                     System.out.println(
-                            "Digite o cargo que deseja: \n 1 - Script Guy \n 2  - Mobile Member \n 3 - HeaVY Lifter \n 4 - Big Brother");
-                    opc = scanner2.nextInt();
+                            "Digite o cargo que deseja: \n 1 - Script Guy \n 2  - Mobile Member \n 3 - Heavy Lifter \n 4 - Big Brother");
+                    opc = Integer.parseInt(scanner.nextLine());
 
                     switch (opc) {
 
                         case 1:
 
                             System.out.println("Digite o nome do usuario: ");
-                            String name = scanner2.nextLine();
+                            String name = scanner.nextLine();
                             System.out.println("Digite o email do usuario: ");
-                            email = scanner2.nextLine();
+                            email = scanner.nextLine();
                             
-                            Funcionario employee1 = new ScriptGuys(name, email);
-                            EmploList.add(employee1);
-                            FuncList.put(name, Funcoes.SCRIPT_GUYS);
+                            EmploList.add(new ScriptGuys(name, email));
+                            
 
                             break;
                         case 2:
                             System.out.println("Digite o nome e o email do funcionario: \n");
                             System.out.println("Nome: \n");
-                            name = scanner2.nextLine();
+                            name = scanner.nextLine();
                             System.out.println("Email: \n");
-                            email = scanner2.nextLine();
+                            email = scanner.nextLine();
 
-                            Funcionario employee2 = new MobileMembers(name, email);
-                            EmploList.add(employee2);
-                            FuncList.put(name, Funcoes.MOBILE_MEMBERS);
+                            EmploList.add(new MobileMembers(name, email));
+                            
 
                             break;
                         case 3:
                             System.out.println("Digite o nome e o email do funcionario: \n");
                             System.out.println("Nome: \n");
-                            name = scanner2.nextLine();
+                            name = scanner.nextLine();
                             System.out.println("Email: \n");
-                            email = scanner2.nextLine();
+                            email = scanner.nextLine();
 
-                            Funcionario employee3 = new HeavyLifters(name, email);
-                            EmploList.add(employee3);
-                            FuncList.put(name, Funcoes.HEAVY_LIFTERS);
+                            EmploList.add(new HeavyLifters(name, email));
+                            
 
                             break;
                         case 4:
                             System.out.println("Digite o nome e o email do funcionario: \n");
                             System.out.println("Nome: \n");
-                            name = scanner2.nextLine();
+                            name = scanner.nextLine();
                             System.out.println("Email: \n");
-                            email = scanner2.nextLine();
+                            email = scanner.nextLine();
 
-                            Funcionario employee4 = new BigBrothers(name, email);
-                            EmploList.add(employee4);
-                            FuncList.put(name, Funcoes.BIG_BROTHERS);
+                            EmploList.add(new BigBrothers(name, email));
+                            
 
                             break;
 
@@ -113,21 +107,9 @@ public class Main {
                             System.out.println("Funcionario nao encontrado");
                         }
                     }
-                    
-                    
-                    for(String name : FuncList.keySet()){
-                        if(name.equals(demitido)){
-                            FuncList.remove(name);
-                            System.out.println("O funcionario " + name + "foi removido.");
-
-                        }
-                        
-
-                    }
-
-                    
 
                     break;
+
                 case 3:
                     if (horario == Horarios.NORMAL) {
                         horario = Horarios.EXTRA;
@@ -136,6 +118,7 @@ public class Main {
                     }
 
                     break;
+                    
                 case 4:
                     if (horario == Horarios.NORMAL) {
                         for (Funcionario value : EmploList) {
