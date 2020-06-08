@@ -6,7 +6,6 @@
 package app;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 import models.BigBrothers;
@@ -122,33 +121,36 @@ public class Main {
 
                     for (Funcionario func : EmploList) {
                         if(func instanceof ScriptGuys){
-                            System.out.println("Nome: " + func.getNome() + "Cargo: " + Funcoes.SCRIPT_GUYS);
+                            System.out.println("Nome: " + func.getNome() + "\n Cargo: " + Funcoes.SCRIPT_GUYS);
                         }
                         else if(func instanceof MobileMembers){
-                            System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.MOBILE_MEMBERS);
+                            System.out.println("Nome: " + func.getNome() + "\n Cargo: "  + Funcoes.MOBILE_MEMBERS);
                         }
                         else if(func instanceof HeavyLifters){
-                            System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.HEAVY_LIFTERS);
+                            System.out.println("Nome: " + func.getNome() + "\n Cargo: "  + Funcoes.HEAVY_LIFTERS);
                         }
                         else if(func instanceof BigBrothers){
-                            System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.BIG_BROTHERS);
+                            System.out.println("Nome: " + func.getNome() + "\n Cargo: "  + Funcoes.BIG_BROTHERS);
                         }
                     }
 
                     System.out.println("Escolha o nome do funcionario que deseja remover: ");
                     demitido = scanner.nextLine();
 
+                    int indexforremoval = -1;
                     for (Funcionario func : EmploList) {
                         if (demitido.equals(func.getNome())) {
-                            EmploList.remove(func);
-                            System.out.println("Funcionario " + func.getNome() + " removido com sucesso.");
-                        }
-                        else{
-                            System.out.println("Funcionario nao encontrado.");
+                            indexforremoval = EmploList.indexOf(func);    
                         }
 
                     }
-
+                    if (indexforremoval != 1){
+                        EmploList.remove(indexforremoval);
+                        System.out.println("Funcionario removido com sucesso.");
+                    }
+                    else{
+                        System.out.println("Funcionario nao encontrado.");
+                    }
                     break;
 
                 case 3:
@@ -180,16 +182,16 @@ public class Main {
 
                 for (Funcionario func : EmploList) {
                     if(func instanceof ScriptGuys){
-                        System.out.println("Nome: " + func.getNome() + "Cargo: " + Funcoes.SCRIPT_GUYS);
+                        System.out.println("Nome: " + func.getNome() + "\n Cargo: " + Funcoes.SCRIPT_GUYS);
                     }
                     else if(func instanceof MobileMembers){
-                        System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.MOBILE_MEMBERS);
+                        System.out.println("Nome: " + func.getNome() + "\n Cargo: "  + Funcoes.MOBILE_MEMBERS);
                     }
                     else if(func instanceof HeavyLifters){
-                        System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.HEAVY_LIFTERS);
+                        System.out.println("Nome: " + func.getNome() + "\n Cargo: "  + Funcoes.HEAVY_LIFTERS);
                     }
                     else if(func instanceof BigBrothers){
-                        System.out.println("Nome: " + func.getNome() + "Cargo: "  + Funcoes.BIG_BROTHERS);
+                        System.out.println("Nome: " + func.getNome() + "\n Cargo: "  + Funcoes.BIG_BROTHERS);
                     }
                 }
 
