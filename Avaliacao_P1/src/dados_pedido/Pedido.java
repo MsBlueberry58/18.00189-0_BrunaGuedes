@@ -3,7 +3,6 @@ package dados_pedido;
 import dados_pedido.enums.Estado_Pedido;
 import dados_pedido.enums.Forma_Pagamento;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class Pedido {

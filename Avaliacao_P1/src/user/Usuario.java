@@ -5,10 +5,6 @@ public class Usuario implements autenticacao {
     String email;
     private String senha = "123456";
 
-    public String getSenha() {
-        return senha;
-    }
-
     public Usuario(String nome, String email) {
         this.nome = nome;
         this.email = email;

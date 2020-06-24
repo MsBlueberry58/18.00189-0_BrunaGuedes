@@ -47,7 +47,9 @@ public class Main_Sistema {
                     break;
 
                 case 2:
-
+                    for(Pedido order : pedidos){
+                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() +  "\tEstado: " + order.getEstado());
+                    }
 
                     break;
 
@@ -65,7 +67,7 @@ public class Main_Sistema {
                     break;
 
                 case 4:
-                    System.out.println("Obrigado, bom dia, boa tarde e boa noite!");
+                    System.out.println("Obrigado, bom dia, boa tarde e boa noite");
 
                     break;
 
