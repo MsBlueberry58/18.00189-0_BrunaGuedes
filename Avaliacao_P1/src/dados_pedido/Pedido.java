@@ -11,10 +11,12 @@ public class Pedido {
     Enum estado;
     Enum pagamento;
     String descricao;
+    String valor;
 
 
-    public Pedido(String desc, String payment) {
+    public Pedido(String desc, String payment, String value) {
         id = geradorID();
+        valor = value;
         estado = Estado_Pedido.REALIZADO;
         descricao = desc;
         if (payment.equals("CREDITO")) {
@@ -40,6 +42,10 @@ public class Pedido {
 
     public Enum getEstado() {
         return estado;
+    }
+
+    public String getValor() {
+        return valor;
     }
 
     public Enum getPagamento() {

@@ -1,4 +1,4 @@
-
+package user;
 
 public class Usuario {
     String nome;
@@ -8,5 +8,4 @@ public class Usuario {
     public String getSenha() {
         return senha;
     }
-
 }

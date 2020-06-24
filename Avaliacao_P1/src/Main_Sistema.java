@@ -1,6 +1,7 @@
 import dados_pedido.Pedido;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main_Sistema {
@@ -19,17 +20,17 @@ public class Main_Sistema {
             switch(op) {
 
                 case 1:
-                    String desc, pag;
+                    String desc, pag, valor;
                     System.out.println("Digite a descriçao do pedido: ");
                     desc = scanner.nextLine();
+                    System.out.println("Digite o valor do pedido: ");
+                    valor = scanner.nextLine();
                     System.out.println("Digite a forma de pagamento do pedido: ");
                     pag = scanner.nextLine();
-                    Pedido p1 = new Pedido(desc, pag.toUpperCase());
+                    Pedido p1 = new Pedido(desc, pag.toUpperCase(), valor);
                     pedidos.add(p1);
                     System.out.println("Seu pedido: \n");
-                    System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado());
-
-
+                    System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado());
 
                     break;
 
