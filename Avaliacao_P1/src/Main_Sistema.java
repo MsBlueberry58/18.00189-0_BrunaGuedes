@@ -26,13 +26,19 @@ public class Main_Sistema {
         int op;
         Usuario u1 = new Usuario(nome, email);
 
+        /**
+         * Criação da lista de pedidos
+         */
         ArrayList<Pedido> pedidos = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Usuario: " + nome);
         System.out.println("Bem-vindo a Pizzaria Rato Que Ri!");
 
-
+        /**
+         * Laço que faz com que o menu continue a aparecer para o usuário, desde que a opção selecionada não
+         * seja a de "Sair" (4)
+         */
         do {
 
 
@@ -42,6 +48,10 @@ public class Main_Sistema {
 
             switch (op) {
 
+                /**
+                 * "Case" para a criação de um novo pedido; é necessária a senha para autenticar o usuário. Depois
+                 * de criar o pedido, adicionar na lista de pedidos e printar o pedido realizado.
+                 */
                 case 1:
                     String desc, pag, valor;
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
@@ -70,6 +80,9 @@ public class Main_Sistema {
                     }
                     break;
 
+                /**
+                 * "Case" para printar a lista de pedidos; não é necessária a senha para autenticar o usuário
+                 */
                 case 2:
                     for (Pedido order : pedidos) {
                         System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
@@ -77,9 +90,19 @@ public class Main_Sistema {
 
                     break;
 
+                /**
+                 * "Case" para a alteração de um pedido; é necessária a senha para autenticar o usuário. A seleção
+                 * do pedido ocorre pelo ID (laço "for" de verificação), e se o ID's baterem, entra num "switch-case"
+                 * para as opções de alteração
+                 */
                 case 3:
                     String id_input;
                     int option;
+                    /**
+                     * Variável booleana usada para a verificação do ID; quando o ID digitado é encontrado na lista
+                     * de pedidos, "verifier" assume o valor "true"; se não for encontrado, ele permanece "false" e
+                     * é printada a mensagem de erro de ID
+                     */
                     boolean verifier = false;
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
                     pass = scanner.nextLine();
@@ -190,6 +213,10 @@ public class Main_Sistema {
                             }
 
                         }
+                        /**
+                         * "if" que verifica o valor de "verifier" e printa a mensagem de erro caso verifier valer
+                         * "false"
+                         */
                         if (!verifier){
                             System.out.println("ID invalido, tente novamente.");
                         }
@@ -203,6 +230,9 @@ public class Main_Sistema {
 
                     break;
 
+                /**
+                 * "Case" que printa a mensagem de saída antes de fechar o programa
+                  */
                 case 4:
                     System.out.println("Mais um otimo dia de trabalho! Desligando o sistema...");
 
