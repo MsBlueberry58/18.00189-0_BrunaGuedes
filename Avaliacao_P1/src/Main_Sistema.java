@@ -1,6 +1,5 @@
-/**
- * Bruna Galastri Guedes - 18.00189-0
- */
+// Bruna Galastri Guedes - 18.00189-0
+
 
 
 
@@ -17,16 +16,16 @@ public class Main_Sistema {
 
     public static void main(String[] args) {
 
-        /**
-         * Começando o programa com um usuário previamente cadastrado no sistema, então já atribuindo valores de nome e email,
-         * visto que o que importa na verificação do programa é a senha. Criando também o usuário em si
-         */
+
+         //Começando o programa com um usuário previamente cadastrado no sistema, então já atribuindo valores de nome e email,
+         //visto que o que importa na verificação do programa é a senha. Criando também o usuário em si
+
         String nome = "Bruna", email = "brunagguedes4@gmail.com";
         String pass;
         int op;
         Usuario u1 = new Usuario(nome, email);
 
-        /**
+        /*
          * Criação da lista de pedidos
          */
         ArrayList<Pedido> pedidos = new ArrayList<>();
@@ -35,7 +34,7 @@ public class Main_Sistema {
         System.out.println("Usuario: " + nome);
         System.out.println("Bem-vindo a Pizzaria Rato Que Ri!");
 
-        /**
+        /*
          * Laço que faz com que o menu continue a aparecer para o usuário, desde que a opção selecionada não
          * seja a de "Sair" (4)
          */
@@ -48,7 +47,7 @@ public class Main_Sistema {
 
             switch (op) {
 
-                /**
+                /*
                  * "Case" para a criação de um novo pedido; é necessária a senha para autenticar o usuário. Depois
                  * de criar o pedido, adicionar na lista de pedidos e printar o pedido realizado.
                  */
@@ -80,7 +79,7 @@ public class Main_Sistema {
                     }
                     break;
 
-                /**
+                /*
                  * "Case" para printar a lista de pedidos; não é necessária a senha para autenticar o usuário
                  */
                 case 2:
@@ -90,7 +89,7 @@ public class Main_Sistema {
 
                     break;
 
-                /**
+                /*
                  * "Case" para a alteração de um pedido; é necessária a senha para autenticar o usuário. A seleção
                  * do pedido ocorre pelo ID (laço "for" de verificação), e se o ID's baterem, entra num "switch-case"
                  * para as opções de alteração
@@ -98,7 +97,7 @@ public class Main_Sistema {
                 case 3:
                     String id_input;
                     int option;
-                    /**
+                    /*
                      * Variável booleana usada para a verificação do ID; quando o ID digitado é encontrado na lista
                      * de pedidos, "verifier" assume o valor "true"; se não for encontrado, ele permanece "false" e
                      * é printada a mensagem de erro de ID
@@ -213,7 +212,7 @@ public class Main_Sistema {
                             }
 
                         }
-                        /**
+                        /*
                          * "if" que verifica o valor de "verifier" e printa a mensagem de erro caso verifier valer
                          * "false"
                          */
@@ -230,7 +229,7 @@ public class Main_Sistema {
 
                     break;
 
-                /**
+                /*
                  * "Case" que printa a mensagem de saída antes de fechar o programa
                   */
                 case 4:

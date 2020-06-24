@@ -7,7 +7,7 @@ import java.util.Random;
 
 /**
  * A classe Pedido contém todos os parâmetros necessários dos pedidos de pizza que serão feitos, além do construtor,
- * getters e setters necessários dos objetos que são pedidos.
+ * getters e setters necessários dos objetos que são pedidos. Seus parâmetros são auto-explicativos
  */
 public class Pedido {
     String id;
@@ -45,9 +45,8 @@ public class Pedido {
         }
     }
 
-    /**
-     * Getters e setters necessários da classe
-     */
+  // Getters e setters necessários da classe
+
     public String getId() {
         return id;
     }
