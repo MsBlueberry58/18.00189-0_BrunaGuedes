@@ -14,8 +14,7 @@ public class Pedido {
 
     ArrayList<Forma_Pagamento> pagamentos = new ArrayList<>();
 
-
-    public void Pedido(String descricao, String payment) {
+    public Pedido(String descricao, String payment) {
         id = geradorID();
         estado = Estado_Pedido.REALIZADO;
         descricao = this.descricao;

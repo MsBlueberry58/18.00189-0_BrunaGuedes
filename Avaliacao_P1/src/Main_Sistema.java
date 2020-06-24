@@ -1,3 +1,5 @@
+import dados_pedido.Pedido;
+
 import java.util.Scanner;
 
 public class Main_Sistema {
@@ -15,9 +17,14 @@ public class Main_Sistema {
             switch(op) {
 
                 case 1:
-                    String desc;
+                    String desc, pag;
                     System.out.println("Digite a descriçao do pedido: ");
                     desc = scanner.nextLine();
+                    System.out.println("Digite a forma de pagamento do pedido: ");
+                    pag = scanner.nextLine();
+                    Pedido p1 = new Pedido(desc, pag);
+                    System.out.println(p1);
+
 
 
                     break;
