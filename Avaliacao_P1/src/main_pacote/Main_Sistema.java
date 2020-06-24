@@ -1,4 +1,7 @@
-package main_pacote;// Bruna Galastri Guedes - 18.00189-0
+// Bruna Galastri Guedes - 18.00189-0
+
+
+package main_pacote;
 
 
 // Importando os pacotes
