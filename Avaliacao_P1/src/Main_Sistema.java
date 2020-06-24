@@ -1,7 +1,7 @@
 // Bruna Galastri Guedes - 18.00189-0
 
 
-// Importando pacotes
+// Importando os pacotes
 
 import dados_pedido.Pedido;
 import dados_pedido.enums.Estado_Pedido;
