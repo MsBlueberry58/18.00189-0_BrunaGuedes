@@ -15,6 +15,9 @@ public class Main_Sistema {
             switch(op) {
 
                 case 1:
+                    String desc;
+                    System.out.println("Digite a descriçao do pedido: ");
+                    desc = scanner.nextLine();
 
 
                     break;
