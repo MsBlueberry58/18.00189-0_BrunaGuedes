@@ -17,8 +17,8 @@ public class Main_Sistema {
     public static void main(String[] args) {
 
 
-         //Começando o programa com um usuário previamente cadastrado no sistema, então já atribuindo valores de nome e email,
-         //visto que o que importa na verificação do programa é a senha. Criando também o usuário em si
+        //Começando o programa com um usuário previamente cadastrado no sistema, então já atribuindo valores de nome e email,
+        //visto que o que importa na verificação do programa é a senha. Criando também o usuário em si
 
         String nome = "Bruna", email = "brunagguedes4@gmail.com";
         String pass;
@@ -70,12 +70,11 @@ public class Main_Sistema {
 
                         // Passando o pag como letras minúsculas para facilitar a comparação
                         Pedido p1 = new Pedido(desc, pag.toLowerCase(), valor);
-                        if(!(p1.getPagamento() == null)){
+                        if (!(p1.getPagamento() == null)) {
                             pedidos.add(p1);
                             System.out.println("Seu pedido: \n");
                             System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado() + "\n");
-                        }
-                        else{
+                        } else {
                             System.out.println("Forma de pagamento invalida, crie outro pedido.");
                         }
 
@@ -125,110 +124,48 @@ public class Main_Sistema {
                         // Percorrendo a lista em busca do ID digitado pelo usuário
                         for (Pedido order : pedidos) {
                             if (id_input.equals(order.getId())) {
+
+                                // "verifier" assume "true", já que os ID's bateram
                                 verifier = true;
-                                System.out.println("Selecione a categoria que deseja alterar: \n");
-                                System.out.println("1 - Descricao \n2 - Valor \n3 - Pagamento \n4 - Estado");
-                                option = Integer.parseInt(scanner.nextLine());
 
-                                switch (option) {
+                                int new_state;
+                                System.out.println("Digite o novo estado do pedido: \n");
+                                System.out.println("1 - Realizado \n2 - Preparacao \n3 - Saiu para a entrega \n4 - Entregue \n5 - Devolvido \n");
+                                new_state = Integer.parseInt(scanner.nextLine());
 
-                                    // Alterando a descrição do pedido
+                                switch (new_state) {
                                     case 1:
-                                        String new_desc;
-                                        System.out.println("Digite a nova descricao: \n");
-                                        new_desc = scanner.nextLine();
-                                        order.setDescricao(new_desc);
-                                        System.out.println("Pedido alterado: \n");
-                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
-
+                                        order.setEstado(Estado_Pedido.REALIZADO);
                                         break;
 
-                                    // Alterando o valor do pedido
                                     case 2:
-                                        String new_valor;
-                                        System.out.println("Digite o novo valor: \n");
-                                        new_valor = scanner.nextLine();
-                                        order.setValor(new_valor);
-                                        System.out.println("Pedido alterado: \n");
-                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
-
-
+                                        order.setEstado(Estado_Pedido.PREPARACAO);
                                         break;
 
-                                    // Alterando a forma de pagamento do pedido
                                     case 3:
-                                        int new_pag;
-                                        System.out.println("Digite a nova forma de pagamento: \n");
-                                        System.out.println("1 - Credito \n2 - Debito \n3 - Dinheiro \n4 - Vale alimentacao \n5 - Vale refeicao \n");
-                                        new_pag = Integer.parseInt(scanner.nextLine());
-
-                                        switch (new_pag) {
-                                            case 1:
-                                                order.setPagamento(Forma_Pagamento.CREDITO);
-                                                break;
-
-                                            case 2:
-                                                order.setPagamento(Forma_Pagamento.DEBITO);
-                                                break;
-
-                                            case 3:
-                                                order.setPagamento(Forma_Pagamento.DINHEIRO);
-                                                break;
-
-                                            case 4:
-                                                order.setPagamento(Forma_Pagamento.VALE_ALIMENTACAO);
-                                                break;
-
-                                            case 5:
-                                                order.setPagamento(Forma_Pagamento.VALE_REFEICAO);
-                                                break;
-                                        }
-
-                                        System.out.println("Pedido alterado: \n");
-                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
-
+                                        order.setEstado(Estado_Pedido.SAIU_PARA_ENTREGA);
                                         break;
 
-                                    // Alterando o estado do pedido
                                     case 4:
-                                        int new_state;
-                                        System.out.println("Digite o novo estado do pedido: \n");
-                                        System.out.println("1 - Realizado \n2 - Preparacao \n3 - Saiu para a entrega \n4 - Entregue \n5 - Devolvido \n");
-                                        new_state = Integer.parseInt(scanner.nextLine());
+                                        order.setEstado(Estado_Pedido.ENTREGUE);
+                                        break;
 
-                                        switch (new_state) {
-                                            case 1:
-                                                order.setEstado(Estado_Pedido.REALIZADO);
-                                                break;
-
-                                            case 2:
-                                                order.setEstado(Estado_Pedido.PREPARACAO);
-                                                break;
-
-                                            case 3:
-                                                order.setEstado(Estado_Pedido.SAIU_PARA_ENTREGA);
-                                                break;
-
-                                            case 4:
-                                                order.setEstado(Estado_Pedido.ENTREGUE);
-                                                break;
-
-                                            case 5:
-                                                order.setEstado(Estado_Pedido.DEVOLVIDO);
-                                                break;
-
-                                        }
-
-
-                                        System.out.println("Pedido alterado: \n");
-                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
+                                    case 5:
+                                        order.setEstado(Estado_Pedido.DEVOLVIDO);
                                         break;
 
                                 }
 
-                                // "break" usado pra quebrar o loop de for quando o ID for encontrado
+
+                                System.out.println("Pedido alterado: \n");
+                                System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
                                 break;
+
                             }
+
+                            // "break" usado pra quebrar o loop de for quando o ID for encontrado
+                            break;
+
 
                         }
 
@@ -236,14 +173,11 @@ public class Main_Sistema {
                          * "if" que verifica o valor de "verifier" e printa a mensagem de erro caso verifier valer
                          * "false"
                          */
-                        if (!verifier){
+                        if (!verifier) {
                             System.out.println("ID invalido, tente novamente.");
                         }
 
-                    }
-
-
-                    else {
+                    } else {
                         System.out.println("Senha invalida, tente novamente.");
                     }
 
@@ -251,7 +185,7 @@ public class Main_Sistema {
 
                 /*
                  * "Case" que printa a mensagem de saída antes de fechar o programa
-                  */
+                 */
                 case 4:
                     System.out.println("Mais um otimo dia de trabalho! Desligando o sistema...");
 
