@@ -19,15 +19,17 @@ public class Pedido {
     /**
      * Construtor da classe Pedido, que gera os pedidos de acordo com as informações dadas pelo usuário na main
      *
-     * @param desc (a descrição do pedido determinada pelo usuário)
+     * @param desc    (a descrição do pedido determinada pelo usuário)
      * @param payment (a forma de pagamento determinada pelo usuário)
-     * @param value (o valor do pedido determinada pelo usuário)
+     * @param value   (o valor do pedido determinada pelo usuário)
      */
     public Pedido(String desc, String payment, String value) {
         id = geradorID();
         valor = value;
         estado = Estado_Pedido.REALIZADO;
         descricao = desc;
+
+        // Tratando o input do usuário para pegar os enums
         if (payment.equals("credito")) {
             pagamento = Forma_Pagamento.CREDITO;
         }
@@ -45,46 +47,56 @@ public class Pedido {
         }
     }
 
-  // Getters e setters necessários da classe
+    // Getters e setters necessários da classe
 
     public String getId() {
+
         return id;
     }
 
     public Enum getEstado() {
+
         return estado;
     }
 
     public String getValor() {
+
         return valor;
     }
 
     public Enum getPagamento() {
+
         return pagamento;
     }
 
     public String getDescricao() {
+
         return descricao;
     }
 
     public void setEstado(Enum estado) {
+
         this.estado = estado;
     }
 
     public void setPagamento(Enum pagamento) {
+
         this.pagamento = pagamento;
     }
 
     public void setDescricao(String descricao) {
+
         this.descricao = descricao;
     }
 
     public void setValor(String valor) {
+
         this.valor = valor;
     }
 
     /**
      * O método gera o ID dos pedidos, sendo ele um número randômico de 3 algarismos.
+     *
      * @return (retorna o ID aleatório)
      */
     private String geradorID() {
