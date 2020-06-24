@@ -6,7 +6,7 @@ import dados_pedido.enums.Forma_Pagamento;
 import java.util.Random;
 
 /**
- * A classe que contém todos os parâmetros necessários dos pedidos de pizza que serão feitos, além do construtor,
+ * A classe Pedido contém todos os parâmetros necessários dos pedidos de pizza que serão feitos, além do construtor,
  * getters e setters necessários dos objetos que são pedidos.
  */
 public class Pedido {
