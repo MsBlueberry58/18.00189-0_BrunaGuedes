@@ -3,6 +3,7 @@ import dados_pedido.enums.Estado_Pedido;
 import dados_pedido.enums.Forma_Pagamento;
 import user.Usuario;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -39,7 +40,7 @@ public class Main_Sistema {
                         Pedido p1 = new Pedido(desc, pag.toUpperCase(), valor);
                         pedidos.add(p1);
                         System.out.println("Seu pedido: \n");
-                        System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado());
+                        System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado() + "\n");
                     } else {
                         System.out.println("Senha invalida, tente novamente.");
                     }
@@ -161,12 +162,13 @@ public class Main_Sistema {
 
                             }
 
-                        }
-                        for (Pedido order : pedidos) {
-                            if (!(id_input.equals(order.getId()))){
+                          else{
                                 System.out.println("ID invalido, tente novamente.");
                             }
+
                         }
+
+
 
 
                     } else {
