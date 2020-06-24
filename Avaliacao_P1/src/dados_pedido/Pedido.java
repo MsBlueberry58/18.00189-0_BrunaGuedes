@@ -33,6 +33,9 @@ public class Pedido {
         if (payment.equals("valerefeicao")) {
             pagamento = Forma_Pagamento.VALE_REFEICAO;
         }
+        else{
+            System.out.println("Forma de pagamento invalida.");
+        }
     }
 
     public String getId() {
