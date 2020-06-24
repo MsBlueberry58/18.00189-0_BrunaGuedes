@@ -65,6 +65,7 @@ public class Main_Sistema {
                 case 3:
                     String id_input;
                     int option;
+                    boolean verifier = false;
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
                     pass = scanner.nextLine();
                     if (u1.autenticando(pass)) {
@@ -75,6 +76,7 @@ public class Main_Sistema {
                         id_input = scanner.nextLine();
                         for (Pedido order : pedidos) {
                             if (id_input.equals(order.getId())) {
+                                verifier = true;
                                 System.out.println("Selecione a categoria que deseja alterar: \n");
                                 System.out.println("1 - Descricao \n2 - Valor \n3 - Pagamento \n4 - Estado");
                                 option = Integer.parseInt(scanner.nextLine());
@@ -169,15 +171,18 @@ public class Main_Sistema {
 
                                 }
 
+                            break;
                             }
 
-
+                        }
+                        if (!verifier){
+                            System.out.println("ID invalido, tente novamente.");
                         }
 
+                    }
 
 
-
-                    } else {
+                    else {
                         System.out.println("Senha invalida, tente novamente.");
                     }
 
