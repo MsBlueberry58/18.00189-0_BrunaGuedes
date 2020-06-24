@@ -5,6 +5,10 @@ import dados_pedido.enums.Forma_Pagamento;
 
 import java.util.Random;
 
+/**
+ * A classe que contém todos os parâmetros necessários dos pedidos de pizza que serão feitos, além do construtor,
+ * getters e setters necessários dos objetos que são pedidos.
+ */
 public class Pedido {
     String id;
     Enum estado;
@@ -12,7 +16,13 @@ public class Pedido {
     String descricao;
     String valor;
 
-
+    /**
+     * Construtor da classe Pedido, que gera os pedidos de acordo com as informações dadas pelo usuário na main
+     *
+     * @param desc (a descrição do pedido determinada pelo usuário)
+     * @param payment (a forma de pagamento determinada pelo usuário)
+     * @param value (o valor do pedido determinada pelo usuário)
+     */
     public Pedido(String desc, String payment, String value) {
         id = geradorID();
         valor = value;
@@ -71,6 +81,10 @@ public class Pedido {
         this.valor = valor;
     }
 
+    /**
+     * O método gera o ID dos pedidos, sendo ele um número randômico de 3 algarismos.
+     * @return (retorna o ID aleatório)
+     */
     private String geradorID() {
         Random random = new Random();
         String idGerado = "";
