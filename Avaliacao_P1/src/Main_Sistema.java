@@ -1,4 +1,6 @@
 import dados_pedido.Pedido;
+import dados_pedido.enums.Estado_Pedido;
+import dados_pedido.enums.Forma_Pagamento;
 import user.Usuario;
 
 import java.util.ArrayList;
@@ -67,12 +69,14 @@ public class Main_Sistema {
                                 System.out.println("1 - Descricao \n2 - Valor \n3 - Pagamento \n4 - Estado");
                                 option = Integer.parseInt(scanner.nextLine());
 
-                                switch (option){
+                                switch (option) {
                                     case 1:
                                         String new_desc;
                                         System.out.println("Digite a nova descricao: \n");
                                         new_desc = scanner.nextLine();
                                         order.setDescricao(new_desc);
+                                        System.out.println("Pedido alterado: \n");
+                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
 
                                         break;
 
@@ -81,26 +85,84 @@ public class Main_Sistema {
                                         System.out.println("Digite o novo valor: \n");
                                         new_valor = scanner.nextLine();
                                         order.setValor(new_valor);
+                                        System.out.println("Pedido alterado: \n");
+                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
+
+
                                         break;
 
                                     case 3:
-                                        String new_pag;
+                                        int new_pag;
                                         System.out.println("Digite a nova forma de pagamento: \n");
-                                        new_pag = scanner.nextLine();
+                                        System.out.println("1 - Credito \n2 - Debito \n3 - Dinheiro \n4 - Vale alimentacao \n5 - Vale refeicao \n");
+                                        new_pag = Integer.parseInt(scanner.nextLine());
 
+                                        switch (new_pag) {
+                                            case 1:
+                                                order.setPagamento(Forma_Pagamento.CREDITO);
+                                                break;
+
+                                            case 2:
+                                                order.setPagamento(Forma_Pagamento.DEBITO);
+                                                break;
+
+                                            case 3:
+                                                order.setPagamento(Forma_Pagamento.DINHEIRO);
+                                                break;
+
+                                            case 4:
+                                                order.setPagamento(Forma_Pagamento.VALE_ALIMENTACAO);
+                                                break;
+
+                                            case 5:
+                                                order.setPagamento(Forma_Pagamento.VALE_REFEICAO);
+                                                break;
+                                        }
+
+                                        System.out.println("Pedido alterado: \n");
+                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
 
                                         break;
 
                                     case 4:
-                                        String new_state;
+                                        int new_state;
                                         System.out.println("Digite o novo estado do pedido: \n");
-                                        new_state = scanner.nextLine();
+                                        System.out.println("1 - Realizado \n2 - Preparacao \n3 - Saiu para a entrega \n4 - Entregue \n5 - Devolvido \n");
+                                        new_state = Integer.parseInt(scanner.nextLine());
+
+                                        switch (new_state) {
+                                            case 1:
+                                                order.setEstado(Estado_Pedido.REALIZADO);
+                                                break;
+
+                                            case 2:
+                                                order.setEstado(Estado_Pedido.PREPARACAO);
+                                                break;
+
+                                            case 3:
+                                                order.setEstado(Estado_Pedido.SAIU_PARA_ENTREGA);
+                                                break;
+
+                                            case 4:
+                                                order.setEstado(Estado_Pedido.ENTREGUE);
+                                                break;
+
+                                            case 5:
+                                                order.setEstado(Estado_Pedido.DEVOLVIDO);
+                                                break;
+
+                                        }
+
+                                        System.out.println("Pedido alterado: \n");
+                                        System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
+
 
                                         break;
 
                                 }
 
-                            } else {
+                            }
+                            else {
                                 System.out.println("ID invalido, tente novamente.");
                             }
                         }
