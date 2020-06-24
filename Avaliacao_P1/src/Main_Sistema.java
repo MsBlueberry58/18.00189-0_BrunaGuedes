@@ -22,7 +22,7 @@ public class Main_Sistema {
                     desc = scanner.nextLine();
                     System.out.println("Digite a forma de pagamento do pedido: ");
                     pag = scanner.nextLine();
-                    Pedido p1 = new Pedido(desc, pag);
+                    Pedido p1 = new Pedido(desc, pag.toUpperCase());
                     System.out.println(p1);
 
 

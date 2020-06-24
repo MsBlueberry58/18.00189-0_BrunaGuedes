@@ -12,16 +12,25 @@ public class Pedido {
     Enum pagamento;
     String descricao;
 
-    ArrayList<Forma_Pagamento> pagamentos = new ArrayList<>();
 
     public Pedido(String descricao, String payment) {
         id = geradorID();
         estado = Estado_Pedido.REALIZADO;
         descricao = this.descricao;
-        for (Enum formas : pagamentos) {
-            if (payment.equals(formas.toString())) {
-                pagamento = formas;
-            }
+        if(payment == "CREDITO"){
+            pagamento = Forma_Pagamento.CREDITO;
+        }
+        if(payment == "DEBITO"){
+            pagamento = Forma_Pagamento.DEBITO;
+        }
+        if(payment == "DINHEIRO"){
+            pagamento = Forma_Pagamento.DINHEIRO;
+        }
+        if(payment == "VALE ALIMENTACAO"){
+            pagamento = Forma_Pagamento.VALE_ALIMENTACAO;
+        }
+        if(payment == "VALE REFEICAO"){
+            pagamento = Forma_Pagamento.VALE_REFEICAO;
         }
     }
 
