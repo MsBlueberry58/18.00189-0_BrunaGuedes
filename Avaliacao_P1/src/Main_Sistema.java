@@ -159,12 +159,13 @@ public class Main_Sistema {
 
                                 System.out.println("Pedido alterado: \n");
                                 System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
+
+                                // "break" usado pra quebrar o loop de for quando o ID for encontrado
                                 break;
 
                             }
 
-                            // "break" usado pra quebrar o loop de for quando o ID for encontrado
-                            break;
+
 
 
                         }
