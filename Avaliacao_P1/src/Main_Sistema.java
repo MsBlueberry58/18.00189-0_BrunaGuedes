@@ -10,10 +10,18 @@ import java.util.Scanner;
 public class Main_Sistema {
 
     public static void main(String[] args) {
+
+        /**
+         * Começando o programa com um usuário previamente cadastrado no sistema, então já atribuindo valores de nome e email,
+         * visto que o que importa na verificação do programa é a senha. Criando também o usuário em si
+         */
         String nome = "Bruna", email = "brunagguedes4@gmail.com";
         String pass;
         int op;
         Usuario u1 = new Usuario(nome, email);
+        /**
+         * Criando a lista de pedidos, declarando scanner
+         */
         ArrayList<Pedido> pedidos = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
@@ -22,6 +30,10 @@ public class Main_Sistema {
 
 
         do {
+
+            /**
+             * Inicializando o menu e apresentando as opções da interface
+             */
             System.out.println("Escolha uma opcao:");
             System.out.println("1 - Nova venda \n2 - Verificar pedidos \n3 - Alterar pedidos\n4 - Sair \n");
             op = Integer.parseInt(scanner.nextLine());
@@ -29,9 +41,13 @@ public class Main_Sistema {
             switch (op) {
 
                 case 1:
+                    /**
+                     * Declarando as variáveis da descrição, do pagamento e do valor que vão ser digitados pelo usuário
+                     */
                     String desc, pag, valor;
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
                     pass = scanner.nextLine();
+
                     if (u1.autenticando(pass)) {
                         System.out.println("Digite a descriçao do pedido: ");
                         desc = scanner.nextLine();
