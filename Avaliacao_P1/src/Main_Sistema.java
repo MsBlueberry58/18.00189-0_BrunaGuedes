@@ -10,6 +10,7 @@ public class Main_Sistema {
 
     public static void main(String[] args) {
         String nome = "Bruna", email = "brunagguedes4@gmail.com";
+        String pass;
         int op;
         Usuario u1 = new Usuario(nome, email);
         ArrayList<Pedido> pedidos = new ArrayList<>();
@@ -25,7 +26,7 @@ public class Main_Sistema {
             switch(op) {
 
                 case 1:
-                    String desc, pag, valor, pass;
+                    String desc, pag, valor;
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
                     pass = scanner.nextLine();
                    if (u1.autenticando(pass) == true) {
@@ -51,12 +52,20 @@ public class Main_Sistema {
                     break;
 
                 case 3:
+                    System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
+                    pass = scanner.nextLine();
+                    if (u1.autenticando(pass) == true) {
+                        System.out.println("Digite o id do pedido que deseja alterar: \n");
 
+                    }
+                    else{
+                        System.out.println("Senha invalida, tente novamente.");
+                    }
 
                     break;
 
                 case 4:
-                    System.out.println("Obrigado e bom dia");
+                    System.out.println("Obrigado, bom dia, boa tarde e boa noite!");
 
                     break;
 
