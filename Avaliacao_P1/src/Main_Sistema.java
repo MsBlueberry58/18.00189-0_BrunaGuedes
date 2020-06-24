@@ -40,7 +40,7 @@ public class Main_Sistema {
          */
         do {
 
-
+            // Printando o menu e pegando a opção escolhida pelo usuário
             System.out.println("Escolha uma opcao:");
             System.out.println("1 - Nova venda \n2 - Verificar pedidos \n3 - Alterar pedidos\n4 - Sair \n");
             op = Integer.parseInt(scanner.nextLine());
@@ -64,7 +64,11 @@ public class Main_Sistema {
                         valor = scanner.nextLine();
                         System.out.println("Digite a forma de pagamento do pedido: ");
                         pag = scanner.nextLine();
+
+                        // Tirando os espaços do pag  para facilitar a comparação
                         pag = pag.replaceAll(" ", "");
+
+                        // Passando o pag como letras minúsculas para facilitar a comparação
                         Pedido p1 = new Pedido(desc, pag.toLowerCase(), valor);
                         if(!(p1.getPagamento() == null)){
                             pedidos.add(p1);
@@ -127,6 +131,8 @@ public class Main_Sistema {
                                 option = Integer.parseInt(scanner.nextLine());
 
                                 switch (option) {
+
+                                    // Alterando a descrição do pedido
                                     case 1:
                                         String new_desc;
                                         System.out.println("Digite a nova descricao: \n");
@@ -137,6 +143,7 @@ public class Main_Sistema {
 
                                         break;
 
+                                    // Alterando o valor do pedido
                                     case 2:
                                         String new_valor;
                                         System.out.println("Digite o novo valor: \n");
@@ -148,6 +155,7 @@ public class Main_Sistema {
 
                                         break;
 
+                                    // Alterando a forma de pagamento do pedido
                                     case 3:
                                         int new_pag;
                                         System.out.println("Digite a nova forma de pagamento: \n");
@@ -181,6 +189,7 @@ public class Main_Sistema {
 
                                         break;
 
+                                    // Alterando o estado do pedido
                                     case 4:
                                         int new_state;
                                         System.out.println("Digite o novo estado do pedido: \n");
@@ -210,16 +219,19 @@ public class Main_Sistema {
 
                                         }
 
+
                                         System.out.println("Pedido alterado: \n");
                                         System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
                                         break;
 
                                 }
 
-                            break;
+                                // "break" usado pra quebrar o loop de for quando o ID for encontrado
+                                break;
                             }
 
                         }
+
                         /*
                          * "if" que verifica o valor de "verifier" e printa a mensagem de erro caso verifier valer
                          * "false"
