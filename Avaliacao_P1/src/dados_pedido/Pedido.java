@@ -55,6 +55,22 @@ public class Pedido {
         return descricao;
     }
 
+    public void setEstado(Enum estado) {
+        this.estado = estado;
+    }
+
+    public void setPagamento(Enum pagamento) {
+        this.pagamento = pagamento;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
     private String geradorID() {
         Random random = new Random();
         String idGerado = "";
