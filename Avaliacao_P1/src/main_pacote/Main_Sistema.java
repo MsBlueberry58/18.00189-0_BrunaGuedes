@@ -1,11 +1,10 @@
-// Bruna Galastri Guedes - 18.00189-0
+package main_pacote;// Bruna Galastri Guedes - 18.00189-0
 
 
 // Importando os pacotes
 
 import dados_pedido.Pedido;
 import dados_pedido.enums.Estado_Pedido;
-import dados_pedido.enums.Forma_Pagamento;
 import user.Usuario;
 
 
@@ -164,8 +163,6 @@ public class Main_Sistema {
                                 break;
 
                             }
-
-
 
 
                         }
