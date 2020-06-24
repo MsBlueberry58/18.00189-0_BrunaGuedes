@@ -29,6 +29,11 @@ public class Main_Sistema {
 
                     break;
 
+                case 4:
+                    System.out.println("Obrigado e bom dia");
+
+                    break;
+
             }
 
         } while (op != 4);
