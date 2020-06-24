@@ -18,19 +18,19 @@ public class Pedido {
         valor = value;
         estado = Estado_Pedido.REALIZADO;
         descricao = desc;
-        if (payment.equals("CREDITO")) {
+        if (payment.equals("credito")) {
             pagamento = Forma_Pagamento.CREDITO;
         }
-        if (payment.equals("DEBITO")) {
+        if (payment.equals("debito")) {
             pagamento = Forma_Pagamento.DEBITO;
         }
-        if (payment.equals("DINHEIRO")) {
+        if (payment.equals("dinheiro")) {
             pagamento = Forma_Pagamento.DINHEIRO;
         }
-        if (payment.equals("VALE ALIMENTACAO")) {
+        if (payment.equals("valealimentacao")) {
             pagamento = Forma_Pagamento.VALE_ALIMENTACAO;
         }
-        if (payment.equals("VALE REFEICAO")) {
+        if (payment.equals("valerefeicao")) {
             pagamento = Forma_Pagamento.VALE_REFEICAO;
         }
     }

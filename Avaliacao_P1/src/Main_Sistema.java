@@ -3,7 +3,7 @@ import dados_pedido.enums.Estado_Pedido;
 import dados_pedido.enums.Forma_Pagamento;
 import user.Usuario;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,11 +17,13 @@ public class Main_Sistema {
         ArrayList<Pedido> pedidos = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Usuario: " + nome);
         System.out.println("Bem-vindo a Pizzaria Rato Que Ri!");
+
 
         do {
             System.out.println("Escolha uma opcao:");
-            System.out.println("1 - Nova venda \n2 - Verificar pedidos \n3 - Alterar pedidos\n4 - Sair");
+            System.out.println("1 - Nova venda \n2 - Verificar pedidos \n3 - Alterar pedidos\n4 - Sair \n");
             op = Integer.parseInt(scanner.nextLine());
 
             switch (op) {
@@ -37,7 +39,8 @@ public class Main_Sistema {
                         valor = scanner.nextLine();
                         System.out.println("Digite a forma de pagamento do pedido: ");
                         pag = scanner.nextLine();
-                        Pedido p1 = new Pedido(desc, pag.toUpperCase(), valor);
+                        pag = pag.replaceAll(" ", "");
+                        Pedido p1 = new Pedido(desc, pag.toLowerCase(), valor);
                         pedidos.add(p1);
                         System.out.println("Seu pedido: \n");
                         System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado() + "\n");
@@ -162,9 +165,6 @@ public class Main_Sistema {
 
                             }
 
-                          else{
-                                System.out.println("ID invalido, tente novamente.");
-                            }
 
                         }
 
@@ -178,7 +178,7 @@ public class Main_Sistema {
                     break;
 
                 case 4:
-                    System.out.println("Obrigado, bom dia, boa tarde e boa noite");
+                    System.out.println("Mais um otimo dia de trabalho! Desligando o sistema...");
 
                     break;
 
