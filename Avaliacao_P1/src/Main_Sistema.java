@@ -155,14 +155,15 @@ public class Main_Sistema {
 
                                         System.out.println("Pedido alterado: \n");
                                         System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
-
-
                                         break;
 
                                 }
 
                             }
-                            else {
+
+                        }
+                        for (Pedido order : pedidos) {
+                            if (!(id_input.equals(order.getId()))){
                                 System.out.println("ID invalido, tente novamente.");
                             }
                         }
