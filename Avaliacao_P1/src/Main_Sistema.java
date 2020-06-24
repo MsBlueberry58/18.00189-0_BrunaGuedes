@@ -1,7 +1,7 @@
 // Bruna Galastri Guedes - 18.00189-0
 
 
-
+// Importando pacotes
 
 import dados_pedido.Pedido;
 import dados_pedido.enums.Estado_Pedido;
@@ -56,6 +56,7 @@ public class Main_Sistema {
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
                     pass = scanner.nextLine();
 
+                    // Uso da interface autenticação assinada pelo usuário; verificação de senha
                     if (u1.autenticando(pass)) {
                         System.out.println("Digite a descriçao do pedido: ");
                         desc = scanner.nextLine();
@@ -105,12 +106,19 @@ public class Main_Sistema {
                     boolean verifier = false;
                     System.out.println("Para a realizacao da autenticacao de usuario, digite sua senha: \n");
                     pass = scanner.nextLine();
+
+                    // Uso da interface autenticação assinada pelo usuário; verificação de senha
                     if (u1.autenticando(pass)) {
+
+                        // Printando a lista para melhor visualização dos ID's
                         for (Pedido order : pedidos) {
                             System.out.println("ID: " + order.getId() + "\tDescricao: " + order.getDescricao() + "\tValor: " + order.getValor() + "\tPagamento: " + order.getPagamento() + "\tEstado: " + order.getEstado());
                         }
+
                         System.out.println("Digite o id do pedido que deseja alterar: \n");
                         id_input = scanner.nextLine();
+
+                        // Percorrendo a lista em busca do ID digitado pelo usuário
                         for (Pedido order : pedidos) {
                             if (id_input.equals(order.getId())) {
                                 verifier = true;
