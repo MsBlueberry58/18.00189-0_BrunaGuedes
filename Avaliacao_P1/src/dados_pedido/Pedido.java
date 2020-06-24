@@ -13,27 +13,42 @@ public class Pedido {
     String descricao;
 
 
-    public Pedido(String descricao, String payment) {
+    public Pedido(String desc, String payment) {
         id = geradorID();
         estado = Estado_Pedido.REALIZADO;
-        descricao = this.descricao;
-        if(payment == "CREDITO"){
+        descricao = desc;
+        if (payment.equals("CREDITO")) {
             pagamento = Forma_Pagamento.CREDITO;
         }
-        if(payment == "DEBITO"){
+        if (payment.equals("DEBITO")) {
             pagamento = Forma_Pagamento.DEBITO;
         }
-        if(payment == "DINHEIRO"){
+        if (payment.equals("DINHEIRO")) {
             pagamento = Forma_Pagamento.DINHEIRO;
         }
-        if(payment == "VALE ALIMENTACAO"){
+        if (payment.equals("VALE ALIMENTACAO")) {
             pagamento = Forma_Pagamento.VALE_ALIMENTACAO;
         }
-        if(payment == "VALE REFEICAO"){
+        if (payment.equals("VALE REFEICAO")) {
             pagamento = Forma_Pagamento.VALE_REFEICAO;
         }
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public Enum getEstado() {
+        return estado;
+    }
+
+    public Enum getPagamento() {
+        return pagamento;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 
     private String geradorID() {
         Random random = new Random();

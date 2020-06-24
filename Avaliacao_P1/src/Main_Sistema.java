@@ -1,9 +1,11 @@
 import dados_pedido.Pedido;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main_Sistema {
     public static void main(String[] args) {
+        ArrayList<Pedido> pedidos = new ArrayList<>();
         int op;
         Scanner scanner = new Scanner(System.in);
 
@@ -23,7 +25,9 @@ public class Main_Sistema {
                     System.out.println("Digite a forma de pagamento do pedido: ");
                     pag = scanner.nextLine();
                     Pedido p1 = new Pedido(desc, pag.toUpperCase());
-                    System.out.println(p1);
+                    pedidos.add(p1);
+                    System.out.println("Seu pedido: \n");
+                    System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado());
 
 
 
