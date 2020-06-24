@@ -41,9 +41,15 @@ public class Main_Sistema {
                         pag = scanner.nextLine();
                         pag = pag.replaceAll(" ", "");
                         Pedido p1 = new Pedido(desc, pag.toLowerCase(), valor);
-                        pedidos.add(p1);
-                        System.out.println("Seu pedido: \n");
-                        System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado() + "\n");
+                        if(!(p1.getPagamento() == null)){
+                            pedidos.add(p1);
+                            System.out.println("Seu pedido: \n");
+                            System.out.println("ID: " + p1.getId() + "\nDescricao: " + p1.getDescricao() + "\nValor: " + p1.getValor() + "\nPagamento: " + p1.getPagamento() + "\nEstado: " + p1.getEstado() + "\n");
+                        }
+                        else{
+                            System.out.println("Forma de pagamento invalida, crie outro pedido.");
+                        }
+
                     } else {
                         System.out.println("Senha invalida, tente novamente.");
                     }
