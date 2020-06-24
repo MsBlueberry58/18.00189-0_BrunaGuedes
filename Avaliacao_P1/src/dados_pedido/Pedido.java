@@ -45,6 +45,9 @@ public class Pedido {
         }
     }
 
+    /**
+     * Getters e setters necessários da classe
+     */
     public String getId() {
         return id;
     }
