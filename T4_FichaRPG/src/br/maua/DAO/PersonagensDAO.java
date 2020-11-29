@@ -49,8 +49,8 @@ public class PersonagensDAO implements DAO<Personagem> {
                         result.getInt("Destreza"),
                         result.getInt("Exp"),
                         result.getInt("Nivel_Atual")
-
                 );
+
                 personagens.add(personagem);
             }
         } catch (Exception e) {
