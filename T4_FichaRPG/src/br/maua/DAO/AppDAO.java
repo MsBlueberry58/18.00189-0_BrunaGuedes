@@ -221,6 +221,8 @@ public class AppDAO {
                                     System.out.println("Digite o novo nome: \n");
                                     String new_name = scanner.nextLine();
 
+                                    personagem.setNome(new_name);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -348,6 +350,14 @@ public class AppDAO {
                  */
 
                 case 4:
+                    personagens.forEach(personagem -> System.out.println(personagem));
+                    System.out.println("Digite o nome do personagem que deseja remover: ");
+                    String id_pers_delete = scanner.nextLine();
+
+                    for (Personagem personagem : personagens) {
+                        if (id_pers_delete.equals(personagem.getNome())){
+                        }
+                    }
 
                     break;
             }
@@ -358,7 +368,7 @@ public class AppDAO {
      * Método criado para mostrar o menu na tela, de forma a não poluir o programa
      */
     private void menu() {
-        System.out.println("DB_Personagens:");
+        System.out.println("Fichas de personagens RPG:");
         System.out.println("1 - Visualizar personagens cadastrados");
         System.out.println("2 - Criar novo personagem");
         System.out.println("3 - Alterar personagem existente");

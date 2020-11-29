@@ -30,7 +30,53 @@ public class Personagem {
         this.Nivel_Atual = nivel_Atual;
     }
 
+    public void setNome(String nome) {
+        Nome = nome;
+    }
 
+    public void setRace(String race) {
+        Race = race;
+    }
+
+    public void setProfissao(String profissao) {
+        Profissao = profissao;
+    }
+
+    public void setMana(int mana) {
+        Mana = mana;
+    }
+
+    public void setAtaque(int ataque) {
+        Ataque = ataque;
+    }
+
+    public void setAtaque_Magico(int ataque_Magico) {
+        Ataque_Magico = ataque_Magico;
+    }
+
+    public void setDefesa(int defesa) {
+        Defesa = defesa;
+    }
+
+    public void setDefesa_Magica(int defesa_Magica) {
+        Defesa_Magica = defesa_Magica;
+    }
+
+    public void setVelocidade(int velocidade) {
+        Velocidade = velocidade;
+    }
+
+    public void setDestreza(int destreza) {
+        Destreza = destreza;
+    }
+
+    public void setExp(int exp) {
+        Exp = exp;
+    }
+
+    public void setNivel_Atual(int nivel_Atual) {
+        Nivel_Atual = nivel_Atual;
+    }
 
     public String getNome() {
         return Nome;
