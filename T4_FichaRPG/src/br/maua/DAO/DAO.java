@@ -1,8 +1,6 @@
 package br.maua.DAO;
 
 import java.util.List;
-
-
 /**
  * Interface genérica utilizada para gerar os métodos que a classe PersonagensDAO terá que implementar.
  *
