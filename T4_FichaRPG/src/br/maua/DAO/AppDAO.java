@@ -44,6 +44,29 @@ public class AppDAO {
                     personagens.forEach(personagem -> System.out.println(personagem));
                     break;
 
+                /**
+                 * O caso 2 cria um personagem de acordo com os desejos do usuário e o insere no banco de dados.
+                 */
+                case 2:
+                    System.out.println("Insira o nome do seu personagem: \n");
+                    String nomePers = scanner.nextLine();
+                    System.out.println("Agora, escolha sua raça: \n1 - Humano \n2 - Orc\n 3 - Elfo");
+                    int op_race = Integer.parseInt(scanner.nextLine());
+
+                    switch (op_race){
+                        case 1:
+
+                            break;
+
+                        case 2:
+
+                            break;
+
+                        case 3:
+
+                            break;
+
+                    }
             }
         } while (rodar);
     }
