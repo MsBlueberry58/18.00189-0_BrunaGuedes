@@ -71,15 +71,15 @@ public class PersonagensDAO implements DAO<Personagens> {
             preparedStatement.setString(1, Personagens.getNome());
             preparedStatement.setString(2, Personagens.getRace());
             preparedStatement.setString(3, Personagens.getProfissao());
-            preparedStatement.setInt(4, anime.getDefesa());
-            preparedStatement.setInt(5, anime.getAtaque());
-            preparedStatement.setInt(6, anime.getAtaque_Magico());
-            preparedStatement.setInt(7, anime.getDefesa());
-            preparedStatement.setInt(8, anime.getDefesa_Magica());
-            preparedStatement.setInt(9, anime.getVelocidade());
-            preparedStatement.setInt(10, anime.getDestreza());
-            preparedStatement.setInt(11, anime.getExp());
-            preparedStatement.setInt(12, anime.getNivelAtual());
+            preparedStatement.setInt(4, Personagens.getDefesa());
+            preparedStatement.setInt(5, Personagens.getAtaque());
+            preparedStatement.setInt(6, Personagens.getAtaque_Magico());
+            preparedStatement.setInt(7, Personagens.getDefesa());
+            preparedStatement.setInt(8, Personagens.getDefesa_Magica());
+            preparedStatement.setInt(9, Personagens.getVelocidade());
+            preparedStatement.setInt(10, Personagens.getDestreza());
+            preparedStatement.setInt(11, Personagens.getExp());
+            preparedStatement.setInt(12, Personagens.getNivelAtual());
             //Executando
             int retorno = preparedStatement.executeUpdate();
         } catch (Exception e) {
