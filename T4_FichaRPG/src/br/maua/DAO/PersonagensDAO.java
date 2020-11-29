@@ -1,6 +1,6 @@
 package br.maua.DAO;
 
-import br.maua.model.Anime;
+import br.maua.models.Personagem;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
  * Classe criada para conexão com o banco de dados "Personagens.db".
  */
 
-public class PersonagensDAO implements DAO<Personagens> {
+public class PersonagensDAO implements DAO<Personagem> {
     private Connection connection;
     private String DBconnectionString = "jdbc:sqlite:Personagens.db";
 
@@ -28,8 +28,8 @@ public class PersonagensDAO implements DAO<Personagens> {
      */
 
     @Override
-    public List<Personagens> getAll() {
-        List<Personagens> personagens = new ArrayList<>();
+    public List<Personagem> getAll() {
+        List<Personagem> personagens = new ArrayList<>();
 
         try {
             Statement statement = connection.createStatement();
@@ -68,18 +68,18 @@ public class PersonagensDAO implements DAO<Personagens> {
     public void insert(Personagem personagem) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Personagens (Nome, Race, Profissao, Mana, Ataque, Ataque_Magico, Defesa, Defesa_Magica, Velocidade, Destreza, Exp, Nivel_Atual) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
-            preparedStatement.setString(1, Personagens.getNome());
-            preparedStatement.setString(2, Personagens.getRace());
-            preparedStatement.setString(3, Personagens.getProfissao());
-            preparedStatement.setInt(4, Personagens.getDefesa());
-            preparedStatement.setInt(5, Personagens.getAtaque());
-            preparedStatement.setInt(6, Personagens.getAtaque_Magico());
-            preparedStatement.setInt(7, Personagens.getDefesa());
-            preparedStatement.setInt(8, Personagens.getDefesa_Magica());
-            preparedStatement.setInt(9, Personagens.getVelocidade());
-            preparedStatement.setInt(10, Personagens.getDestreza());
-            preparedStatement.setInt(11, Personagens.getExp());
-            preparedStatement.setInt(12, Personagens.getNivelAtual());
+            preparedStatement.setString(1, personagem.getNome());
+            preparedStatement.setString(2, personagem.getRace());
+            preparedStatement.setString(3, personagem.getProfissao());
+            preparedStatement.setInt(4, personagem.getMana());
+            preparedStatement.setInt(5, personagem.getAtaque());
+            preparedStatement.setInt(6, personagem.getAtaque_Magico());
+            preparedStatement.setInt(7, personagem.getDefesa());
+            preparedStatement.setInt(8, personagem.getDefesa_Magica());
+            preparedStatement.setInt(9, personagem.getVelocidade());
+            preparedStatement.setInt(10, personagem.getDestreza());
+            preparedStatement.setInt(11, personagem.getExp());
+            preparedStatement.setInt(12, personagem.getNivel_Atual());
             //Executando
             int retorno = preparedStatement.executeUpdate();
         } catch (Exception e) {
