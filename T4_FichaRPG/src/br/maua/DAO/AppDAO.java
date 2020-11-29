@@ -40,9 +40,10 @@ public class AppDAO {
                  */
                 case 1:
                     personagens = personagemDAO.getAll();
-                    System.out.println("Animes: ");
+                    System.out.println("Personagens: ");
                     personagens.forEach(personagem -> System.out.println(personagem));
                     break;
+
             }
         } while (rodar);
     }
@@ -51,11 +52,9 @@ public class AppDAO {
      * Método criado para mostrar o menu na tela, de forma a não poluir o programa
      */
     private void menu() {
-        System.out.println("DB_Animes:");
-        System.out.println("1 - Animes Cadastrados");
-        System.out.println("2 - Mangas Cadastrados");
-        System.out.println("3 - Procurar anime");
-        System.out.println("4 - Procurar manga");
+        System.out.println("DB_Personagens:");
+        System.out.println("1 - Personagens cadastrados");
+        System.out.println("2 - Criar novo personagem");
         System.out.println("0 - Sair");
     }
 }

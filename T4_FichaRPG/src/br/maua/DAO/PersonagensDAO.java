@@ -29,6 +29,7 @@ public class PersonagensDAO implements DAO<Personagem> {
 
     @Override
     public List<Personagem> getAll() {
+
         List<Personagem> personagens = new ArrayList<>();
 
         try {
@@ -46,7 +47,7 @@ public class PersonagensDAO implements DAO<Personagem> {
                         result.getInt("Defesa_Magica"),
                         result.getInt("Velocidade"),
                         result.getInt("Destreza"),
-                        result.getInt("Experiencia"),
+                        result.getInt("Exp"),
                         result.getInt("Nivel_Atual")
 
                 );

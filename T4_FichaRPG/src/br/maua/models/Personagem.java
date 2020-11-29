@@ -31,6 +31,7 @@ public class Personagem {
     }
 
 
+
     public String getNome() {
         return Nome;
     }
