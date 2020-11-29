@@ -41,13 +41,13 @@ public class PersonagensDAO implements DAO<Personagem> {
                         result.getString("Profissao"),
                         result.getInt("Mana"),
                         result.getInt("Ataque"),
-                        result.getInt("Ataque Magico"),
+                        result.getInt("Ataque_Magico"),
                         result.getInt("Defesa"),
-                        result.getInt("Defesa Magica"),
+                        result.getInt("Defesa_Magica"),
                         result.getInt("Velocidade"),
                         result.getInt("Destreza"),
                         result.getInt("Experiencia"),
-                        result.getInt("Nivel Atual")
+                        result.getInt("Nivel_Atual")
 
                 );
                 personagens.add(personagem);
