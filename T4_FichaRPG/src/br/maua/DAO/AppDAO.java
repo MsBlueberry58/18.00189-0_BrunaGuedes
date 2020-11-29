@@ -205,8 +205,10 @@ public class AppDAO {
      */
     private void menu() {
         System.out.println("DB_Personagens:");
-        System.out.println("1 - Personagens cadastrados");
+        System.out.println("1 - Visualizar personagens cadastrados");
         System.out.println("2 - Criar novo personagem");
+        System.out.println("3 - Alterar personagem existente");
+        System.out.println("4 - Remover personagem");
         System.out.println("0 - Sair");
     }
 }
