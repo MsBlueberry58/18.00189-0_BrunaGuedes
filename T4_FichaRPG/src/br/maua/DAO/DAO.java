@@ -10,6 +10,8 @@ public interface DAO<T> {
     List<T> getAll();
 
     void insert(T t);
+
+
 }
 
 

@@ -87,4 +87,22 @@ public class PersonagensDAO implements DAO<Personagem> {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Método criado para remover um personagem do banco de dados local, recebendo tal personagem como parâmetro.
+     *
+     * @param personagem
+     */
+
+    public void remove(Personagem personagem, String nome) {
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(String.format("DELETE FROM Personagens WHERE Nome = %s", nome));
+
+            //Executando
+            int retorno = preparedStatement.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
+

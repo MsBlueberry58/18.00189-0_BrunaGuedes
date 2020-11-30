@@ -233,6 +233,8 @@ public class AppDAO {
                                     System.out.println("Digite a nova raça: \n");
                                     String new_race = scanner.nextLine();
 
+                                    personagem.setRace(new_race);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -243,6 +245,8 @@ public class AppDAO {
                                     System.out.println("Digite a nova profissao: \n");
                                     String new_prof = scanner.nextLine();
 
+                                    personagem.setProfissao(new_prof);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -252,6 +256,8 @@ public class AppDAO {
 
                                     System.out.println("Digite a nova mana: \n");
                                     int new_mana = Integer.parseInt(scanner.nextLine());
+
+                                    personagem.setMana(new_mana);
 
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
@@ -264,6 +270,8 @@ public class AppDAO {
                                     System.out.println("Digite o novo ataque: \n");
                                     int new_atk = Integer.parseInt(scanner.nextLine());
 
+                                    personagem.setAtaque(new_atk);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -273,6 +281,8 @@ public class AppDAO {
 
                                     System.out.println("Digite o novo ataque magico: \n");
                                     int new_spatk = Integer.parseInt(scanner.nextLine());
+
+                                    personagem.setAtaque_Magico(new_spatk);
 
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
@@ -284,6 +294,8 @@ public class AppDAO {
                                     System.out.println("Digite a nova defesa: \n");
                                     int new_def = Integer.parseInt(scanner.nextLine());
 
+                                    personagem.setDefesa(new_def);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -293,6 +305,8 @@ public class AppDAO {
 
                                     System.out.println("Digite a nova defesa especial: \n");
                                     int new_spdef = Integer.parseInt(scanner.nextLine());
+
+                                    personagem.setDefesa_Magica(new_spdef);
 
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
@@ -304,6 +318,8 @@ public class AppDAO {
                                     System.out.println("Digite a nova velocidade: \n");
                                     int new_spd = Integer.parseInt(scanner.nextLine());
 
+                                    personagem.setVelocidade(new_spd);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -313,6 +329,8 @@ public class AppDAO {
 
                                     System.out.println("Digite a nova destreza: \n");
                                     int new_dex = Integer.parseInt(scanner.nextLine());
+
+                                    personagem.setDestreza(new_dex);
 
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
@@ -324,6 +342,8 @@ public class AppDAO {
                                     System.out.println("Digite a nova experiencia: \n");
                                     int new_xp = Integer.parseInt(scanner.nextLine());
 
+                                    personagem.setExp(new_xp);
+
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
 
@@ -333,6 +353,8 @@ public class AppDAO {
 
                                     System.out.println("Digite o novo nivel: \n");
                                     int new_lvl = Integer.parseInt(scanner.nextLine());
+
+                                    personagem.setNivel_Atual(new_lvl);
 
                                     System.out.println("Novos dados do personagem: \n");
                                     System.out.println(personagem);
@@ -356,8 +378,12 @@ public class AppDAO {
 
                     for (Personagem personagem : personagens) {
                         if (id_pers_delete.equals(personagem.getNome())){
+                            personagemDAO.remove(personagem,id_pers_delete);
                         }
                     }
+
+                    System.out.println("Novo banco de dados: \n");
+                    personagens.forEach(personagem -> System.out.println(personagem));
 
                     break;
             }
