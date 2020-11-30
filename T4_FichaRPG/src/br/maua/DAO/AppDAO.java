@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class AppDAO {
     private List<Personagem> personagens;
-    private PersonagensDAO personagemDAO = new PersonagensDAO();
+    private PersonagensDAO personagemDAO;
     private Scanner scanner;
 
     public AppDAO() {
@@ -38,9 +38,11 @@ public class AppDAO {
                  */
                 case 1:
                     personagens = personagemDAO.getAll();
-
                     System.out.println("Personagens: ");
-                   personagens.forEach(personagem -> System.out.println(personagem));
+                    for (Personagem personagem : personagens) {
+                        System.out.print(personagem);
+                    }
+
                     break;
 
                 /**
@@ -83,7 +85,7 @@ public class AppDAO {
                                     int H_M_lvl = Integer.parseInt(scanner.nextLine());
 
                                     Personagem HumanoMago = new Personagem(nomePers, "Humano", "Mago", H_M_mana, H_M_atk, H_M_atkm, H_M_def, H_M_defm, H_M_vel, H_M_des, H_M_exp, H_M_lvl);
-                                    personagens.add(HumanoMago);
+                                    personagemDAO.insert(HumanoMago);
                                     System.out.println("Personagem criado: ");
                                     System.out.println(HumanoMago);
 
@@ -112,7 +114,7 @@ public class AppDAO {
                                     int H_C_lvl = Integer.parseInt(scanner.nextLine());
 
                                     Personagem HumanoCavaleiro = new Personagem(nomePers, "Humano", "Cavaleiro", H_C_mana, H_C_atk, H_C_atkm, H_C_def, H_C_defm, H_C_vel, H_C_des, H_C_exp, H_C_lvl);
-                                    personagens.add(HumanoCavaleiro);
+                                    personagemDAO.insert(HumanoCavaleiro);
                                     System.out.println("Personagem criado: ");
                                     System.out.println(HumanoCavaleiro);
 
@@ -152,7 +154,7 @@ public class AppDAO {
                                     int E_M_lvl = Integer.parseInt(scanner.nextLine());
 
                                     Personagem ElfoMago = new Personagem(nomePers, "Elfo", "Mago", E_M_mana, E_M_atk, E_M_atkm, E_M_def, E_M_defm, E_M_vel, E_M_des, E_M_exp, E_M_lvl);
-                                    personagens.add(ElfoMago);
+                                    personagemDAO.insert(ElfoMago);
                                     System.out.println("Personagem criado: ");
                                     System.out.println(ElfoMago);
 
@@ -181,7 +183,7 @@ public class AppDAO {
                                     int E_C_lvl = Integer.parseInt(scanner.nextLine());
 
                                     Personagem ElfoCavaleiro = new Personagem(nomePers, "Elfo", "Cavaleiro", E_C_mana, E_C_atk, E_C_atkm, E_C_def, E_C_defm, E_C_vel, E_C_des, E_C_exp, E_C_lvl);
-                                    personagens.add(ElfoCavaleiro);
+                                    personagemDAO.insert(ElfoCavaleiro);
                                     System.out.println("Personagem criado: ");
                                     System.out.println(ElfoCavaleiro);
 
