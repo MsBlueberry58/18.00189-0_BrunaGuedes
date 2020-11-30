@@ -39,9 +39,7 @@ public class AppDAO {
                 case 1:
                     personagens = personagemDAO.getAll();
                     System.out.println("Personagens: ");
-                    for (Personagem personagem : personagens) {
-                        System.out.print(personagem);
-                    }
+                    personagens.forEach(personagem -> System.out.println(personagem));
 
                     break;
 
@@ -208,8 +206,8 @@ public class AppDAO {
                         if (id_pers.equals(personagem.getNome())) {
                             System.out.println(personagem);
                             System.out.println("Escolha o atributo que deseja alterar: \n" +
-                                    "1 - Nome \n2 - Raça \n3 - Profissao\n 4 - Mana\n 5 - Ataque \n6 - Ataque Magico \n" +
-                                    "7 - Defesa \n8 - Defesa Magica \n9 - Velocidade \n10 - Destreza \n 11 - XP \n12 - Nivel Atual");
+                                    "1 - Nome \n2 - Raça \n3 - Profissao\n4 - Mana\n5 - Ataque \n6 - Ataque Magico \n" +
+                                    "7 - Defesa \n8 - Defesa Magica \n9 - Velocidade \n10 - Destreza \n11 - XP \n12 - Nivel Atual");
                             int op_mudar = Integer.parseInt(scanner.nextLine());
 
                             switch (op_mudar) {
@@ -379,9 +377,6 @@ public class AppDAO {
                             personagemDAO.remove(personagem,id_pers_delete);
                         }
                     }
-
-                    System.out.println("Novo banco de dados: ");
-                    personagens.forEach(personagem -> System.out.println(personagem));
 
                     break;
             }
