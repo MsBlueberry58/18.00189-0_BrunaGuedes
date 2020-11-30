@@ -2,8 +2,6 @@ package br.maua.DAO;
 
 
 import br.maua.models.Personagem;
-import br.maua.DAO.*;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +38,9 @@ public class AppDAO {
                  */
                 case 1:
                     personagens = personagemDAO.getAll();
+
                     System.out.println("Personagens: ");
-                    personagens.forEach(personagem -> System.out.println(personagem));
+                   personagens.forEach(personagem -> System.out.println(personagem.getRace()));
                     break;
 
                 /**
@@ -187,12 +186,9 @@ public class AppDAO {
                                     System.out.println(ElfoCavaleiro);
 
                                     break;
-
                             }
 
                             break;
-
-
                     }
 
                     break;
@@ -382,7 +378,7 @@ public class AppDAO {
                         }
                     }
 
-                    System.out.println("Novo banco de dados: \n");
+                    System.out.println("Novo banco de dados: ");
                     personagens.forEach(personagem -> System.out.println(personagem));
 
                     break;
@@ -394,7 +390,7 @@ public class AppDAO {
      * Método criado para mostrar o menu na tela, de forma a não poluir o programa
      */
     private void menu() {
-        System.out.println("Fichas de personagens RPG:");
+        System.out.println("Bem vindo ao RPG Topzera do Zanini!");
         System.out.println("1 - Visualizar personagens cadastrados");
         System.out.println("2 - Criar novo personagem");
         System.out.println("3 - Alterar personagem existente");

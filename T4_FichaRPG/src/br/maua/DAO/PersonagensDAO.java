@@ -96,7 +96,7 @@ public class PersonagensDAO implements DAO<Personagem> {
 
     public void remove(Personagem personagem, String nome) {
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement(String.format("DELETE FROM Personagens WHERE Nome = %s", nome));
+            PreparedStatement preparedStatement = connection.prepareStatement(String.format("DELETE FROM Personagens WHERE Nome = '%s'", nome));
 
             //Executando
             int retorno = preparedStatement.executeUpdate();
