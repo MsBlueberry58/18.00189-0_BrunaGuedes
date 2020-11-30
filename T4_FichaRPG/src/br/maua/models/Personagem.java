@@ -125,4 +125,28 @@ public class Personagem {
     public int getNivel_Atual() {
         return Nivel_Atual;
     }
+
+
+    /**
+     * Método que transforma o personagem em uma String.
+     *
+     * @return String - personagem
+     */
+    @Override
+    public String toString() {
+        return "Personagem{" +
+                "Nome='" + Nome + '\'' +
+                ", Race='" + Race + '\'' +
+                ", Profissao='" + Profissao + '\'' +
+                ", Mana=" + Mana +
+                ", Ataque=" + Ataque +
+                ", Ataque Magico='" + Ataque_Magico + '\'' +
+                ", Defesa='" + Defesa + '\'' +
+                ", Defesa Magica='" + Defesa_Magica + '\'' +
+                ", Velocidade='" + Velocidade + '\'' +
+                ", Destreza='" + Destreza + '\'' +
+                ", Experiencia='" + Exp + '\'' +
+                ", Nivel Atual='" + Nivel_Atual + '\'' +
+                '}';
+    }
 }

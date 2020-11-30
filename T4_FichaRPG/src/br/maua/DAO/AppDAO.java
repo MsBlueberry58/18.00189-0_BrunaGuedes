@@ -40,7 +40,7 @@ public class AppDAO {
                     personagens = personagemDAO.getAll();
 
                     System.out.println("Personagens: ");
-                   personagens.forEach(personagem -> System.out.println(personagem.getRace()));
+                   personagens.forEach(personagem -> System.out.println(personagem));
                     break;
 
                 /**
