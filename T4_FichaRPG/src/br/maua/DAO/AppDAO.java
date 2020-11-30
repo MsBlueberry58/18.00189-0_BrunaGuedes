@@ -39,7 +39,9 @@ public class AppDAO {
                 case 1:
                     personagens = personagemDAO.getAll();
                     System.out.println("Personagens: ");
-                    personagens.forEach(personagem -> System.out.println(personagem));
+                    for (Personagem personagem : personagens) {
+                        System.out.print(personagem + "\n");
+                    }
 
                     break;
 
